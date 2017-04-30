@@ -59,27 +59,20 @@
 
 **基礎裝備盤點**
 
-*   請協助補完<(_ _)>
+請協助補完<(\_ \_)>
 
 *   乾淨的電腦
-
-        *   乾淨安裝的作業系統（定時重灌）
-
+    *   乾淨安裝的作業系統（定時重灌）
     *   確保安裝程式的來源都是安全的（小心破解程式）
     *   留意執行檔！
     *   安全性更新！！（軟體生命週期）
     *   留意更新！！！（更新的本質）
     *   防毒、防火牆？
-
 *   檢查你的網路環境
-
-        *   怎麼判斷網路是否安全？
-
+    *   怎麼判斷網路是否安全？
     *   公司？家裡？哪個國家？什麼ISP？
-
     *   留意用戶合約/僱員同意條款/法規
-
-    *   對於不安全的網路，請使用VPN穿越到你可以信任的地方（詳見[穿牆術](https://realdefense.hackpad.com/5sy1mlwddcS#:h=%E7%A9%BF%E7%89%86%E8%A1%93) ）
+    *   對於不安全的網路，請使用VPN穿越到你可以信任的地方（詳見[穿牆術](https://github.com/sakura26/DADA/blob/master/anti-monitoring.md#穿牆術) ）
 
 ## 給技術人的分水嶺
 
@@ -87,14 +80,14 @@
 
 如果你是技術人、駭客、網管，我們繼續看下去
 
-*   我是不是該開一個 給偏執狂 的介紹...?
+我是不是該開一個 給偏執狂 的介紹...?
 
 ## 偵測
-<undefined><li>**最簡單的探測方法**</li></undefined>
+**最簡單的探測方法**
 
 首先，加入一家公司（或一個國家）之前，合約（法律）務必看清楚
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_7Ym93Ixn8AC_p.568925_1484882831089_%E5%9C%96%E7%89%87.png)
+![](img/anti-defense01.png)
 
 偵測技術大致上可以分成幾大類
 
@@ -110,33 +103,23 @@
 
 *   網路流量分析
 
-        *   流量側錄（Gateway）
+    *   流量側錄（Gateway）
     *   網站瀏覽（WebFilter、DNS、MITM）
-
-                *   HTTP Proxy代理
-
-                        *   [](http://slides.com/sakura26/uservsdefense/#/26)[http://slides.com/sakura26/uservsdefense/#/26](http://slides.com/sakura26/uservsdefense/#/26)
-            *   [](http://amibehindaproxy.com/)[http://amibehindaproxy.com/](http://amibehindaproxy.com/)
-
-            *   直接封包解析
+        *   HTTP Proxy代理
+            *   [http://slides.com/sakura26/uservsdefense/#/26](http://slides.com/sakura26/uservsdefense/#/26)
+            *   [http://amibehindaproxy.com/](http://amibehindaproxy.com/)
+        *   直接封包解析
         *   DNS紀錄
-
         *   郵件通訊（Server、Gateway、MITM）
     *   即時通訊（Gateway）
-
     *   關鍵字\檔案偵測（Gateway）
-
 *   資料外洩偵測（Host / Gateway）DLP
-
 *   電話系統側錄（Server）
 *   行動裝置（Backdoor）
-
-*   BYOD企業不能違反法令放隱藏的後門，所以一般會以app型態出現
-*   留意憑證
-
+    *   BYOD企業不能違反法令放隱藏的後門，所以一般會以app型態出現
+    *   留意憑證
 *   後門與遙控
 *   地理位置追蹤
-
 *   實體（Server）
 
 **釣魚**
@@ -154,7 +137,8 @@
 ## 穿牆術
 
 綜合加密、混淆、繞過的手段，實現不被阻擋控制
-<undefined><li>**初級班**</li></undefined>
+
+### 初級班
 
 *   公司的防火牆限制內對外傳輸只有80 / 443能走
 
@@ -539,9 +523,7 @@ VPN Gate
 
 *   通則：切斷可辨識的連結
 *   選項：混淆（混入人群中）
-
-        *   引入大量資訊混淆
-
+    *   引入大量資訊混淆
     *   用自拍累死FBI：監控那個監控你的人
     *   [](https://theinitium.com/article/20160904-dailynews-selfies-fbi/)[https://theinitium.com/article/20160904-dailynews-selfies-fbi/](https://theinitium.com/article/20160904-dailynews-selfies-fbi/)
 
@@ -549,7 +531,7 @@ VPN Gate
 
 *   選項：隱藏（你看不到我）
 
-        *   最小化接觸面積
+    *   最小化接觸面積
     *   最小化資料傳輸
     *   盡量避開可被大量監聽的媒介
 
