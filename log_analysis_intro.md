@@ -38,7 +38,7 @@ _這不是傳統的課程，請不要來「聽課」，腦袋硬梆梆的是做�
 
 *   我覺得似乎可以補充一下，log 除了自動產生的以外，還有一些是  commit log 這種有人參與的
 
-    ​
+      ​
 
 ### 為什麼要有Log？
 
@@ -217,7 +217,7 @@ syslog
 
 圖1.1
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_n0O7PHgMX5t_p.568925_1491717730569_螢幕快照 2017-04-09 下午2.00.45.png)
+![image](https://github.com/sakura26/DADA/blob/master/img/log_analysis_1.png)
 
 補充：windows安全日誌分析之logparser篇
 
@@ -433,7 +433,7 @@ Logstalgia [](http://logstalgia.io/)[http://logstalgia.io/](http://logstalgia.io
 
 apachetop  
 
-![](http://img1.51cto.com/attachment/200908/13/612518_1250155488VmfN.jpg)
+![](https://github.com/sakura26/DADA/blob/master/img/log_analysis_2.jpg)
 
 ​		圖1.2
 
@@ -510,7 +510,7 @@ glTail.rb 看起來也很炫，雖然我不太懂為什麼他要加入物理引�
 *   <s>缺點我就不多說了，用了好幾年心裡各種幹</s>
 *   視覺化能力真的很弱，只有事件圖能看
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_n0O7PHgMX5t_p.568925_1491728560816_圖片.png)
+![](https://github.com/sakura26/DADA/blob/master/img/log_analysis_3.png)
 
 圖3
 
