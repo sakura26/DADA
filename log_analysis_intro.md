@@ -200,7 +200,7 @@ Sun Apr  2 14:26:12 2017 [pid 1] [clubtw] FAIL LOGIN: Client "115.159.55.184"
 
 ``` shell
 Apr  9 07:42:29 xxx rsyslogd: [origin software="rsyslogd" swVersion="5.x.x" x-pid="1006" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
-Apr  9 07:42:48 xxx anacron[23088]: Job `cron.daily' terminated (mailing output)
+Apr  9 07:42:48 xxx anacron[23088]: Job 'cron.daily' terminated (mailing output)
 Apr  9 07:42:48 xxx anacron[23088]: Normal exit (1 job run)
 Apr  9 07:42:48 xxx postfix/pickup[22694]: 323FA6010A: uid=0 from=<root>
 Apr  9 07:42:48 xxx postfix/cleanup[23501]: 323FA6010A: message-id=20170408234248.323FA6010A@xxx.com
@@ -333,6 +333,9 @@ Sun Apr  2 14:26:12 2017 pid 1 FAIL LOGIN: Client "115.159.55.184"
 
 ``` shell
 $ cat vsftpd.log* | grep FAIL | cut -c 35- | tr -d ']' | cut -d' ' -f1 | sort | uniq -c | sort -n | tail 
+```
+
+``` shell
 868 club888
 868 club_tw
 868 club-tw
@@ -349,6 +352,9 @@ $ cat vsftpd.log* | grep FAIL | cut -c 35- | tr -d ']' | cut -d' ' -f1 | sort | 
 
 ``` shell
 $ cat vsftpd.log* | grep FAIL | awk '{print $8 " " $12}' | sort | uniq -c | sort -n | tail
+```
+
+``` shell
 868 [club123456] "115.159.55.184"
 868 [club888] "115.159.55.184"
 868 [club_tw] "115.159.55.184"
@@ -365,6 +371,9 @@ $ cat vsftpd.log* | grep FAIL | awk '{print $8 " " $12}' | sort | uniq -c | sort
 
 ``` shell
 $ cat vsftpd.log* | grep FAIL | grep -v "115.159.55.184" | awk '{print $8 " " $12}' | sort | uniq -c | sort -n | tail
+```
+
+``` shell
 58 [pp] "60.249.245.180"
 59 [club] "60.249.245.180"
 60 [acg] "60.249.245.180"
@@ -381,6 +390,9 @@ $ cat vsftpd.log* | grep FAIL | grep -v "115.159.55.184" | awk '{print $8 " " $1
 
 ``` shell
 $ for line in cat vsftpd.log* | grep FAIL | awk '{print $12}' | sort | uniq; do echo -n "$line: ";cat vsftpd.log*|grep $line|awk '{print $8}'| sort | uniq -c|wc -l ; done | awk '{print $2" "$1}'| sort -n | tail
+```
+
+``` shell
 6 "60.13.132.38":
 6 "60.13.192.113":
 6 "60.216.4.162":
@@ -397,6 +409,9 @@ $ for line in cat vsftpd.log* | grep FAIL | awk '{print $12}' | sort | uniq; do 
 
 ``` shell
 $ cat other_vhosts_access.log | cut -d'[' -f 2 | cut -d':' -f1-2 | sort | uniq -c 
+```
+
+``` shell
 896 09/Apr/2017:07
 3315 09/Apr/2017:08
 4286 09/Apr/2017:09
