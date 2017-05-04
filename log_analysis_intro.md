@@ -38,7 +38,7 @@ _這不是傳統的課程，請不要來「聽課」，腦袋硬梆梆的是做�
 
 *   我覺得似乎可以補充一下，log 除了自動產生的以外，還有一些是  commit log 這種有人參與的
 
-    ​
+      ​
 
 ### 為什麼要有Log？
 
@@ -163,61 +163,79 @@ syslog
 
 #### Apache Access Log
 
-*   xxx.xxx.tw:80 114.27.125.17 - - [09/Apr/2017:07:42:38 +0800] "GET /s/pixmicat.php?mode=module&load=mod_shoutbox&action=latest HTTP/1.1" 200 416 "[](http://xxx.xxx.tw/s/)http://[x](http://p.komica.acg.club.tw/s/)[x](http://x.tw/s/)[x](http://xx.tw/s/)[.](http://xxx.tw/s/)[x](http://xxx..tw/s/)xx.tw/s/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
-*   xxx.xxx.tw:80 183.178.169.204 - - [09/Apr/2017:07:42:41 +0800] "GET /a/pixmicat.php?mode=module&load=mod_shoutbox&action=latest HTTP/1.1" 200 432 "[](http://xxx.xxx.tw/a/)http://[x](http://.tw/a/)[x](http://x.tw/a/)[x](http://xx.tw/a/)[.](http://xxx.tw/a/)[x](http://xxx..tw/a/)[x](http://xxx.x.tw/a/)[x](http://xxx.xx.tw/a/).tw/a/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+```shell
+xxx.xxx.tw:80 114.27.125.17 - - [09/Apr/2017:07:42:38 +0800] "GET /s/pixmicat.php?mode=module&load=mod_shoutbox&action=latest HTTP/1.1" 200 416 "[](http://xxx.xxx.tw/s/)http://[x](http://p.komica.acg.club.tw/s/)[x](http://x.tw/s/)[x](http://xx.tw/s/)[.](http://xxx.tw/s/)[x](http://xxx..tw/s/)xx.tw/s/" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+```
+
+```shell
+xxx.xxx.tw:80 183.178.169.204 - - [09/Apr/2017:07:42:41 +0800] "GET /a/pixmicat.php?mode=module&load=mod_shoutbox&action=latest HTTP/1.1" 200 432 "[](http://xxx.xxx.tw/a/)http://[x](http://.tw/a/)[x](http://x.tw/a/)[x](http://xx.tw/a/)[.](http://xxx.tw/a/)[x](http://xxx..tw/a/)[x](http://xxx.x.tw/a/)[x](http://xxx.xx.tw/a/).tw/a/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+```
 
 #### Apache Error log
 
-*   [Sun Apr 09 07:46:12 2017] [error] [client 126.xxx.60.57] File does not exist: /home/xxx/www/favicon.ico, referer: [](http://xxx.xxx.com/photo/mt/c/DSCF7116.JPG)http://[x](http://.com/photo/mt/c/DSCF7116.JPG)[x](http://x.com/photo/mt/c/DSCF7116.JPG)[x](http://xx.com/photo/mt/c/DSCF7116.JPG)[.x](http://xxx.com/photo/mt/c/DSCF7116.JPG)[x](http://xxx.x.com/photo/mt/c/DSCF7116.JPG)[x](http://xxx.xx.com/photo/mt/c/DSCF7116.JPG).com/photo/mt/c/DSCF7116.JPG
-*   [Sun Apr 09 07:48:19 2017] [error] [client 68.xxx.180.113] File does not exist: /home/p/a/src/1486650846281.gif
+```shell
+Sun Apr 09 07:46:12 2017 [client 126.xxx.60.57] File does not exist: /home/xxx/www/favicon.ico, referer: http://xxx.xxx.com/photo/mt/c/DSCF7116.JPG
+```
+
+``` shell
+Sun Apr 09 07:48:19 2017 [client 68.xxx.180.113] File does not exist: /home/p/a/src/1486650846281.gif
+```
 
 #### vsftpd
 
-*   Sun Apr  2 12:28:51 2017 [pid 2] CONNECT: Client "174.106.37.179"
-*   Sun Apr  2 12:28:53 2017 [pid 1] [anonymous] FAIL LOGIN: Client "174.106.37.179"
-*   Sun Apr  2 14:25:55 2017 [pid 2] CONNECT: Client "115.159.55.184"
-*   Sun Apr  2 14:25:57 2017 [pid 1] [club] FAIL LOGIN: Client "115.159.55.184"
-*   Sun Apr  2 14:25:59 2017 [pid 2] CONNECT: Client "115.159.55.184"
-*   Sun Apr  2 14:26:03 2017 [pid 1] [xxx.xxx.xxx.club.tw] FAIL LOGIN: Client "115.159.55.184"
-*   Sun Apr  2 14:26:04 2017 [pid 2] CONNECT: Client "115.159.55.184"
-*   Sun Apr  2 14:26:07 2017 [pid 1][xxx] FAIL LOGIN: Client "115.159.55.184"
-*   Sun Apr  2 14:26:08 2017 [pid 2] CONNECT: Client "115.159.55.184"
-*   Sun Apr  2 14:26:12 2017 [pid 1] [clubtw] FAIL LOGIN: Client "115.159.55.184"
+```shell
+Sun Apr  2 12:28:51 2017 [pid 2] CONNECT: Client "174.106.37.179"
+Sun Apr  2 12:28:53 2017 pid 1 FAIL LOGIN: Client "174.106.37.179"
+Sun Apr  2 14:25:55 2017 [pid 2] CONNECT: Client "115.159.55.184"
+Sun Apr  2 14:25:57 2017 [pid 1] [club] FAIL LOGIN: Client "115.159.55.184"
+Sun Apr  2 14:25:59 2017 [pid 2] CONNECT: Client "115.159.55.184"
+Sun Apr  2 14:26:03 2017 [pid 1] [xxx.xxx.xxx.club.tw] FAIL LOGIN: Client "115.159.55.184"
+Sun Apr  2 14:26:04 2017 [pid 2] CONNECT: Client "115.159.55.184"
+Sun Apr  2 14:26:07 2017 [pid 1][xxx] FAIL LOGIN: Client "115.159.55.184"
+Sun Apr  2 14:26:08 2017 [pid 2] CONNECT: Client "115.159.55.184"
+Sun Apr  2 14:26:12 2017 [pid 1] [clubtw] FAIL LOGIN: Client "115.159.55.184"
+```
 
 #### syslog / message
 
-*   Apr  9 07:42:29 xxx rsyslogd: [origin software="rsyslogd" swVersion="5.x.x" x-pid="1006" x-info="[](http://www.rsyslog.com)http://www.rsyslog.com"] rsyslogd was HUPed
-*   Apr  9 07:42:48 xxx anacron[23088]: Job `cron.daily' terminated (mailing output)
-*   Apr  9 07:42:48 xxx anacron[23088]: Normal exit (1 job run)
-*   Apr  9 07:42:48 xxx postfix/pickup[22694]: 323FA6010A: uid=0 from=<root>
-*   Apr  9 07:42:48 xxx postfix/cleanup[23501]: 323FA6010A: message-id=<20170408234248.323FA6010A@xxx.com>
-*   Apr  9 07:42:48 xxx postfix/qmgr[1968]: 323FA6010A: from=<root@xxx.com>, size=466, nrcpt=1 (queue active)
-*   Apr  9 07:42:48 xxx postfix/local[23503]: 323FA6010A: to=<root@xxx.com>, orig_to=<root>, relay=local, delay=0.02, delays=0.02/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
-*   Apr  9 07:42:48 xxx postfix/qmgr[1968]: 323FA6010A: removed
+``` shell
+Apr  9 07:42:29 xxx rsyslogd: [origin software="rsyslogd" swVersion="5.x.x" x-pid="1006" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Apr  9 07:42:48 xxx anacron[23088]: Job 'cron.daily' terminated (mailing output)
+Apr  9 07:42:48 xxx anacron[23088]: Normal exit (1 job run)
+Apr  9 07:42:48 xxx postfix/pickup[22694]: 323FA6010A: uid=0 from=<root>
+Apr  9 07:42:48 xxx postfix/cleanup[23501]: 323FA6010A: message-id=20170408234248.323FA6010A@xxx.com
+Apr  9 07:42:48 xxx postfix/qmgr[1968]: 323FA6010A: from=root@xxx.com, size=466, nrcpt=1 (queue active)
+Apr  9 07:42:48 xxx postfix/local[23503]: 323FA6010A: to=root@xxx.com, orig_to=<root>, relay=local, delay=0.02, delays=0.02/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Apr  9 07:42:48 xxx postfix/qmgr[1968]: 323FA6010A: removed
+```
 
 #### auth.log
 
-*   Apr  9 11:22:12 xxx sshd[xx]: Accepted password for xxx from xxx.xxx.xxx.82 port 55825 ssh2
-*   Apr  9 11:22:12 xxx sshd[xx]: pam_unix(sshd:session): session opened for user xxx by(uid=0)
-*   Apr  9 11:25:01 xxx CRON[xx]:pam_unix(cron:session): session opened for user root by(uid=0)
-*   Apr  9 11:46:12 xxx sudo:       xxx : TTY=pts/3 ; PWD=/var/log ; USER=root ;COMMAND=/bin/su
-*   Apr  9 11:46:12 xxx sudo: pam_unix(sudo:session): session opened for user root by xxx(uid=1000)
-*   Apr  9 11:46:12 xxx su[xx]: Successful su for root by root
-*   Apr  9 11:46:12 xxx su[xx]: + /dev/pts/3 root:root
-*   Apr  9 11:46:12 xxx su[xx]: pam_unix(su:session): session opened for user root by xx(uid=0)
+``` shell
+Apr  9 11:22:12 xxx sshd[xx]: Accepted password for xxx from xxx.xxx.xxx.82 port 55825 ssh2
+Apr  9 11:22:12 xxx sshd[xx]: pam_unix(sshd:session): session opened for user xxx by(uid=0)
+Apr  9 11:25:01 xxx CRON[xx]:pam_unix(cron:session): session opened for user root by(uid=0)
+Apr  9 11:46:12 xxx sudo:       xxx : TTY=pts/3 ; PWD=/var/log ; USER=root ;COMMAND=/bin/su
+Apr  9 11:46:12 xxx sudo: pam_unix(sudo:session): session opened for user root by xxx(uid=1000)
+Apr  9 11:46:12 xxx su[xx]: Successful su for root by root
+Apr  9 11:46:12 xxx su[xx]: + /dev/pts/3 root:root
+Apr  9 11:46:12 xxx su[xx]: pam_unix(su:session): session opened for user root by xx(uid=0)
+```
 
 #### Lastlog
 
-*   $ last
-*   xxx       pts/4        220-xxx-xxx-82.h Sun Apr  9 13:26   still logged in   
-*   xxx       pts/3        220-xxx-xxx-82.h Sun Apr  9 11:22   still logged in   
-*   wtmp begins Sun Apr  9 11:22:16 2018
+```shell
+$ last
+xxx       pts/4        220-xxx-xxx-82.h Sun Apr  9 13:26   still logged in 
+xxx       pts/3        220-xxx-xxx-82.h Sun Apr  9 11:22   still logged in  
+wtmp begins Sun Apr  9 11:22:16 2018
+```
 
 #### Windows也有喔
 
 圖1.1
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_n0O7PHgMX5t_p.568925_1491717730569_螢幕快照 2017-04-09 下午2.00.45.png)
+![image](https://github.com/sakura26/DADA/blob/master/img/log_analysis_1.png)
 
 補充：windows安全日誌分析之logparser篇
 
@@ -258,124 +276,153 @@ Log分析大致上有兩個走向
 
 ### 常用Unix串流處理命令
 
-head / tail
+#### head / tail
 
-*   -f , -n
+-f , -n
 
-grep / egrep
+#### grep / egrep
 
 *   -v, regex
 
-cat
+#### cat
 
 *   -d  -n  行號
 
-cut 
+#### cut 
 
 *   -d, -c, -f
 
-sort / uniq 
+#### sort / uniq 
 
 *   -c, -n   
 
-tr / sed
+#### tr / sed
 
 *   -d, regex
 
-awk
+#### awk
 
 *   太複雜了自己看，猛猛的神物
 
-補充：Linux日志终极指南
+#### 補充
+
+* Linux日志终极指南
 
 [](http://os.51cto.com/art/201703/535721.htm)http://os.51cto.com/art/201703/535721.htm
 
-用SQL指令分析網站日誌 輕鬆掌握主機運作狀況
+* 用SQL指令分析網站日誌 輕鬆掌握主機運作狀況
 
 [](http://www.netadmin.com.tw/article_content.aspx?sn=1703130003)http://www.netadmin.com.tw/article_content.aspx?sn=1703130003
 
 #### vsftpd.log
 
-*   Sun Apr  2 12:28:51 2017 [pid 2] CONNECT: Client "174.106.37.179"
-*   Sun Apr  2 12:28:53 2017 [pid 1] [anonymous] FAIL LOGIN: Client "174.106.37.179"
-*   Sun Apr  2 14:25:55 2017 [pid 2] CONNECT: Client "115.159.55.184"
-*   Sun Apr  2 14:25:57 2017 [pid 1] [club] FAIL LOGIN: Client "115.159.55.184"
-*   Sun Apr  2 14:25:59 2017 [pid 2] CONNECT: Client "115.159.55.184"
-*   Sun Apr  2 14:26:03 2017 [pid 1] [xxx.xxx.xxx.club.tw] FAIL LOGIN: Client "115.159.55.184"
-*   Sun Apr  2 14:26:04 2017 [pid 2] CONNECT: Client "115.159.55.184"
-*   Sun Apr  2 14:26:07 2017 [pid 1] [xxx] FAIL LOGIN: Client "115.159.55.184"
-*   Sun Apr  2 14:26:08 2017 [pid 2] CONNECT: Client "115.159.55.184"
-*   Sun Apr  2 14:26:12 2017 [pid 1] [clubtw] FAIL LOGIN: Client "115.159.55.184"
+``` shell
+Sun Apr  2 12:28:51 2017 [pid 2] CONNECT: Client "174.106.37.179"
+Sun Apr  2 12:28:53 2017 pid 1 FAIL LOGIN: Client "174.106.37.179"
+Sun Apr  2 14:25:55 2017 [pid 2] CONNECT: Client "115.159.55.184"
+Sun Apr  2 14:25:57 2017 pid 1 FAIL LOGIN: Client "115.159.55.184"
+Sun Apr  2 14:25:59 2017 [pid 2] CONNECT: Client "115.159.55.184"
+Sun Apr  2 14:26:03 2017 pid 1 FAIL LOGIN: Client "115.159.55.184"
+Sun Apr  2 14:26:04 2017 [pid 2] CONNECT: Client "115.159.55.184"
+Sun Apr  2 14:26:07 2017 pid 1 FAIL LOGIN: Client "115.159.55.184"
+Sun Apr  2 14:26:08 2017 [pid 2] CONNECT: Client "115.159.55.184"
+Sun Apr  2 14:26:12 2017 pid 1 FAIL LOGIN: Client "115.159.55.184"
+```
 
 #### 抓出FTP登入失敗者的排名
 
-*   $ cat vsftpd.log* | grep FAIL | cut -c 35- | tr -d ']' | cut -d' ' -f1 | sort | uniq -c | sort -n | tail 
-*   868 club888
-*   868 club_tw
-*   868 club-tw
-*   868 ppclub
-*   869 club666
-*   873 tw
-*   881 clubtw
-*   890 pp.xxx.club.tw
-*   1372 club
-*   1416 pp
+``` shell
+$ cat vsftpd.log* | grep FAIL | cut -c 35- | tr -d ']' | cut -d' ' -f1 | sort | uniq -c | sort -n | tail 
+```
+
+``` shell
+868 club888
+868 club_tw
+868 club-tw
+868 ppclub
+869 club666
+873 tw
+881 clubtw
+890 pp.xxx.club.tw
+1372 club
+1416 pp
+```
 
 #### 抓出FTP登入失敗者的來源ip並與名稱配對
 
-*   $ cat vsftpd.log* | grep FAIL | awk '{print $8 " " $12}' | sort | uniq -c | sort -n | tail
-*   868 [club123456] "115.159.55.184"
-*   868 [club888] "115.159.55.184"
-*   868 [club_tw] "115.159.55.184"
-*   868 [club-tw] "115.159.55.184"
-*   868 [clubtw] "115.159.55.184"
-*   868 [pp] "115.159.55.184"
-*   868 [ppclub] "115.159.55.184"
-*   868 [pp.xxx.club.tw] "115.159.55.184"
-*   868 [tw] "115.159.55.184"
-*   869 [club666] "115.159.55.184"
+``` shell
+$ cat vsftpd.log* | grep FAIL | awk '{print $8 " " $12}' | sort | uniq -c | sort -n | tail
+```
+
+``` shell
+868 [club123456] "115.159.55.184"
+868 [club888] "115.159.55.184"
+868 [club_tw] "115.159.55.184"
+868 [club-tw] "115.159.55.184"
+868 [clubtw] "115.159.55.184"
+868 [pp] "115.159.55.184"
+868 [ppclub] "115.159.55.184"
+868 [pp.xxx.club.tw] "115.159.55.184"
+868 [tw] "115.159.55.184"
+869 [club666] "115.159.55.184"
+```
 
 #### 排除"115.159.55.184"換個方法再看一次
 
-*   $ cat vsftpd.log* | grep FAIL | grep -v "115.159.55.184" | awk '{print $8 " " $12}' | sort | uniq -c | sort -n | tail
-*   58 [pp] "60.249.245.180"
-*   59 [club] "60.249.245.180"
-*   60 [acg] "60.249.245.180"
-*   88 [admin] "45.76.185.49"
-*   88 [ftp] "45.76.185.49"
-*   88 [root] "45.76.185.49"
-*   97 [pp] "166.62.39.130"
-*   98 [acg] "166.62.39.130"
-*   98 [club] "166.62.39.130"
-*   102 [komica] "166.62.39.130"
+``` shell
+$ cat vsftpd.log* | grep FAIL | grep -v "115.159.55.184" | awk '{print $8 " " $12}' | sort | uniq -c | sort -n | tail
+```
+
+``` shell
+58 [pp] "60.249.245.180"
+59 [club] "60.249.245.180"
+60 [acg] "60.249.245.180"
+88 [admin] "45.76.185.49"
+88 [ftp] "45.76.185.49"
+88 [root] "45.76.185.49"
+97 [pp] "166.62.39.130"
+98 [acg] "166.62.39.130"
+98 [club] "166.62.39.130"
+102 [komica] "166.62.39.130"
+```
 
 #### 抓出每個IP嘗試登入的使用者名稱總量（進階）
 
-*   $ for line in `cat vsftpd.log* | grep FAIL | awk '{print $12}' | sort | uniq`; do echo -n "$line: ";cat vsftpd.log*|grep $line|awk '{print $8}'| sort | uniq -c|wc -l ; done | awk '{print $2" "$1}'| sort -n | tail
-*   6 "60.13.132.38":
-*   6 "60.13.192.113":
-*   6 "60.216.4.162":
-*   6 "60.249.245.180":
-*   6 "85.99.113.82":
-*   6 "95.9.179.10":
-*   7 "62.149.193.132":
-*   13 "115.159.55.184":
-*   54 "112.64.217.127":
-*   82 Client:
+``` shell
+$ for line in cat vsftpd.log* | grep FAIL | awk '{print $12}' | sort | uniq; do echo -n "$line: ";cat vsftpd.log*|grep $line|awk '{print $8}'| sort | uniq -c|wc -l ; done | awk '{print $2" "$1}'| sort -n | tail
+```
+
+``` shell
+6 "60.13.132.38":
+6 "60.13.192.113":
+6 "60.216.4.162":
+6 "60.249.245.180":
+6 "85.99.113.82":
+6 "95.9.179.10":
+7 "62.149.193.132":
+13 "115.159.55.184":
+54 "112.64.217.127":
+82 Client:
+```
 
 #### Apache網站的使用時間分佈圖（小時）
 
-*   $ cat other_vhosts_access.log | cut -d'[' -f 2 | cut -d':' -f1-2 | sort | uniq -c 
-*   896 09/Apr/2017:07
-*   3315 09/Apr/2017:08
-*   4286 09/Apr/2017:09
-*   4778 09/Apr/2017:10
-*   6075 09/Apr/2017:11
-*   5580 09/Apr/2017:12
-*   6635 09/Apr/2017:13
-*   6958 09/Apr/2017:14
-*   6583 09/Apr/2017:15
-*   6119 09/Apr/2017:16
+``` shell
+$ cat other_vhosts_access.log | cut -d'[' -f 2 | cut -d':' -f1-2 | sort | uniq -c 
+```
+
+``` shell
+896 09/Apr/2017:07
+3315 09/Apr/2017:08
+4286 09/Apr/2017:09
+4778 09/Apr/2017:10
+6075 09/Apr/2017:11
+5580 09/Apr/2017:12
+6635 09/Apr/2017:13
+6958 09/Apr/2017:14
+6583 09/Apr/2017:15
+6119 09/Apr/2017:16
+```
 
 呃...還是太複雜嗎？
 
@@ -385,7 +432,7 @@ awk
 
 ### 簡易
 
-#### Excel / OpenOffice calc / Google sheets**
+#### Excel / OpenOffice calc / Google sheets
 
 基本上來說，你得先把資料轉換成Excel或是CSV檔案，這可以透過Script來實現
 
@@ -433,7 +480,7 @@ Logstalgia [](http://logstalgia.io/)[http://logstalgia.io/](http://logstalgia.io
 
 apachetop  
 
-![](http://img1.51cto.com/attachment/200908/13/612518_1250155488VmfN.jpg)
+![](https://github.com/sakura26/DADA/blob/master/img/log_analysis_2.jpg)
 
 ​		圖1.2
 
@@ -458,8 +505,6 @@ glTail.rb 看起來也很炫，雖然我不太懂為什麼他要加入物理引�
 從這邊開始就是一個完整的環境了
 
 #### ELK Stack
-
-*
 
 [](https://www.youtube.com/watch?v=TOxu97lvqRc)https://www.youtube.com/watch?v=TOxu97lvqRc
 
@@ -491,8 +536,6 @@ glTail.rb 看起來也很炫，雖然我不太懂為什麼他要加入物理引�
 
 但關聯性分析方面就弱一點，然後可能比ArcSight還貴
 
-*
-
 [](https://www.youtube.com/watch?v=-q-Ue603vKc)https://www.youtube.com/watch?v=-q-Ue603vKc
 
 這玩意看起來也滿帥的，是外掛套件，不過非常吃效能
@@ -507,10 +550,10 @@ glTail.rb 看起來也很炫，雖然我不太懂為什麼他要加入物理引�
 
 然後效能實在是 = =
 
-*   <s>缺點我就不多說了，用了好幾年心裡各種幹</s>
+*   缺點我就不多說了，用了好幾年心裡各種幹
 *   視覺化能力真的很弱，只有事件圖能看
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_n0O7PHgMX5t_p.568925_1491728560816_圖片.png)
+![](https://github.com/sakura26/DADA/blob/master/img/log_analysis_3.png)
 
 圖3
 
