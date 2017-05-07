@@ -1,21 +1,34 @@
 # 給人權工作者的自保指南
 
-*   [](https://docs.google.com/document/d/1e4B22ztGsXXiY-V860Vsz0al2_J-hJdf9VNnd76miSI/edit#)https://docs.google.com/document/d/1e4B22ztGsXXiY-V860Vsz0al2_J-hJdf9VNnd76miSI/edit#
-*   5/24 **11:30-12:30**
-*   <u>Tutorial: General Information Security defense</u>
-*   General concepts in security and guidelines on protecting oneself, such as safely storing data, security hygiene.
+*   [https://docs.google.com/document/d/1e4B22ztGsXXiY-V860Vsz0al2_J-hJdf9VNnd76miSI/edit#](https://docs.google.com/document/d/1e4B22ztGsXXiY-V860Vsz0al2_J-hJdf9VNnd76miSI/edit#)
+*   5/25 11:00-12:00
 *   40-50人
 *   亞洲人權工作者
 *   英文演講
+* 24 
+* 9:00 Intro
+* 11:00 Q&A: digital rights status quo 了解用戶
+* 11:30 Tutorial: General Information Security defense概論
+* 13:30 Tutorial: Real-world Social Engineering社交工程
+* 14:30 群組討論
+* 25
+* 9:00 用戶分享
+* 11:00 Tutorial: **Ubiqitous Surveillance Technologies**如何防禦
+* 12:00 群組討論
 
-**人權工作者遇到的困難**
+Smartphone, WiFi, Internet of Things as well as many technologies can all surveillance on us. How to survive in this world when everyone is Truman.
+
+## 主軸
+
+* 
+
+## Q 人權工作者遇到的困難
 
 *   不知道如何判斷自己是否被入侵了、某個服務是否安全
 
-*   這兩個事實上是個大哉問，因為連駭客都不一定知道這個答案（笑
-*   我會更想要知道他們實際的use case是怎麼樣
+## A
 
-我被入侵了嗎？
+### 我被入侵了嗎？
 
 這是個很難以回答的問題，連鑑識專家也不一定敢跟你拍胸脯保證全部看過之後不會有漏，更不用說個人了。基本上只有看到駭客的足跡的時候才有辦法說“確實被入侵”
 
@@ -25,7 +38,7 @@
 
 有一點use case會比較好講
 
-某個線上服務是否安全？
+### 某個線上服務是否安全？
 
 連東西在自家都難以判斷是否安全了，放在別人家的你相信嗎？
 
@@ -43,7 +56,7 @@
 
 在滿足資訊分級與碎片化的前提下，我們大可在感測到異常的時候快速切換不同的身份、服務、系統
 
-反制資訊化時代的追蹤：資料碎片化
+### 反制資訊化時代的追蹤：資料碎片化
 
 到處都有監視器，悠遊卡通行全台，而信用卡通行全世界與網路，數據持續地被收集，他們了解我們比我們自己還要多
 
@@ -57,16 +70,17 @@
 
 不過目前大多數時候台灣ＸＸ局都還是靠人力去拼湊就是了
 
-資訊分級
+### 資訊分級
 
-Critical: 可能造成生命、財產風險的訊息
+* Critical: 可能造成生命、財產風險的訊息
+* Private: 個人隱私資料
+* Public: 可公開資料
 
-Private: 個人隱私資料
 
-Public: 可公開資料
 
-**主軸**
 
+以下本來是要給第一場的主軸，不過現在換給GD了
+/*
 現況
 
  案例
@@ -102,3 +116,5 @@ Public: 可公開資料
 [](https://panicbutton.io/)https://panicbutton.io/
 
 [](https://safetag.org/)https://safetag.org/
+
+*/
