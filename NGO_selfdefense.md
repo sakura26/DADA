@@ -69,7 +69,9 @@ Smartphone, WiFi, Internet of Things as well as many technologies can all survei
 
 ### 進階防禦：追蹤的本質
 
-一個人的行為訴說了一個人的本質：我不用讀你的腦，但我可以比你更了解自己
+一個人的行為訴說了一個人的本質
+
+NSA 我不用讀你的腦，但我可以比你更了解自己
 
 #### 兩種類型
 
@@ -93,7 +95,7 @@ Smartphone, WiFi, Internet of Things as well as many technologies can all survei
 
 
 
-## 主軸 Ubiqitous Surveillance Technologies
+## 主軸 概論
 
 
 現況
