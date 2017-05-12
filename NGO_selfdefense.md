@@ -8,26 +8,65 @@
 * 24 
 * 9:00 Intro
 * 11:00 Q&A: digital rights status quo 了解用戶
-* 11:30 Tutorial: General Information Security defense概論
+* 11:30 Tutorial: Ubiqitous Surveillance Technologies監控
 * 13:30 Tutorial: Real-world Social Engineering社交工程
 * 14:30 群組討論
 * 25
 * 9:00 用戶分享
-* 11:00 Tutorial: **Ubiqitous Surveillance Technologies**如何防禦
+* 11:00 Tutorial: **General Information Security defense**概論/總結
 * 12:00 群組討論
 
 Smartphone, WiFi, Internet of Things as well as many technologies can all surveillance on us. How to survive in this world when everyone is Truman.
 
-## 主軸 Ubiqitous Surveillance Technologies
+## 主軸
 
-### 假設在前面已經有基礎認知
+### 須確保的基礎認知
 
 * 人權工作者為高風險的存在，威脅來自有權有勢的大型企業與政府
 * 保護，不只是為了自己的安全，更是為了信念的成敗。
 * 一旦出事，損傷的不只是自己，更是組織跟保護的對象
 * 你做得到！
 
-今天，我們來談“反監控”
+今天，我們來談談“黑魔法”
+
+### 案例
+
+* 李明哲「被失蹤」事件
+* 中國710「維權律師」大抓捕
+* 香港銅鑼灣書店
+* 新加坡余澎杉批評新加坡前總理李光耀被判刑
+* 美國NSA對全世界網路持續監控
+* 美國邊防檢查強硬要求取得手機/電腦密碼
+  * [邊境安檢對隱私的重大威脅](https://rocket.cafe/talks/83154)
+  * [旅客拒交手機 恐進美國入境黑名單](https://udn.com/news/story/6813/2385939)
+  * [[爆掛]美國海關收走我的筆電&手機三天....](https://www.ptt.cc/bbs/Gossiping/M.1494542282.A.968.html)
+  
+族繁不及備載，挑一個講，其他帶過
+
+
+### 你的對手
+
+昨天的Sector “Ubiqitous Surveillance Technologies”提過了，政府與大型企業最容易與你們站在對立面，掌握國家資源與軍事力量的對手可以靠各種監控技術追蹤與
+
+特性、強度、他們想要什麼
+
+* 國家
+  * 監控講過了，帶過
+  * 美國、中國，選一邊？
+  * 
+* 企業
+  * 監控...有講嗎？帶過
+* 利用個資賺錢的商人
+  * 應該要講一下
+* 雇傭兵
+
+
+### 你的對手的目的
+
+你的對手，不是為了摧毀“你”，他想摧毀的是你的信念，藉由你將毒液滲透進組織，殺死那些應被保護的，殺死那些阻擋他們濫權的。
+
+
+是時候拿起你的盾，面對他了
 
 ### 基本功
 
@@ -46,10 +85,12 @@ Smartphone, WiFi, Internet of Things as well as many technologies can all survei
 ### 三大面向
 
 * 網路通訊
+  * 基本認知
 * 個人裝置
+  * 基本認知
 * 其他外部追蹤機制
 
-### X要Y不
+### 自保心法：X要Y不
 
 * 不隨意信任他人、空間、網路
 * 不要直接相信其他人給你的訊息，相信你自己求證過的
@@ -64,8 +105,13 @@ Smartphone, WiFi, Internet of Things as well as many technologies can all survei
 ### 工具
 
 * 網路
-* 什麼是安全的網路
+  * 什麼是安全的網路？我怎麼判斷我的服務供應商可以信任？
 * 主機
+* 機密通訊
+
+### 案例解析？
+
+史諾登紀錄片？
 
 ### 進階防禦：追蹤的本質
 
@@ -88,54 +134,31 @@ NSA 我不用讀你的腦，但我可以比你更了解自己
 * 不要讓他收集到的資料可以串在一起
 * 假資料
 * 不要讓自己的行為被“關注”
+* 已經被盯上了？用資訊淹沒你的對手
 
-### 絕對不可外洩的資料：自爆機制
+### 進階防禦：Mission Impossable
 
-
-
-
-
-## 主軸 概論
+絕對不可外洩的資料：自爆機制
 
 
-現況
 
- 案例
 
-  找個慘烈的失敗案例
+工具
+我該相信誰？中國美國？
+chrome的安全？
+我怎麼判斷服務商是否安全
+  信譽
+  我的密碼沒加密
+  加密
+  金鑰哪邊管
+  是否付費
+政府的衛星能不能看到我們？
 
- 身為前線的戰士，你們的對手是...
 
-  政府、企業、傭兵團
-
- 對手有多強？
-
- 他會對我們做什麼？
-
- 是時候，拿起你的盾，面對它了
-
-對策
-
- 基本功：站穩腳步
-
- 熟悉戰場：網路基礎認知
-
- 自保心法
-
- 了解裝備：什麼東西可以協助你
-
- 案例解析
-
-  史諾登紀錄片
-
- 實戰？
 
 [](https://panicbutton.io/)https://panicbutton.io/
 
 [](https://safetag.org/)https://safetag.org/
-
-美國邊境安檢強迫旅客解鎖手機
-<https://rocket.cafe/talks/83154>
 
 
 ## Q 人權工作者遇到的困難
