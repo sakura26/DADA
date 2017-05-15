@@ -16,7 +16,7 @@
 * 11:00 Tutorial: **General Information Security defense**概論/總結
 * 12:00 群組討論
 
-Smartphone, WiFi, Internet of Things as well as many technologies can all surveillance on us. How to survive in this world when everyone is Truman.
+Slide: <https://slides.com/sakura26/general-information-security-defense-for-ngo>
 
 ## 主軸
 
@@ -41,19 +41,17 @@ Smartphone, WiFi, Internet of Things as well as many technologies can all survei
   * [旅客拒交手機 恐進美國入境黑名單](https://udn.com/news/story/6813/2385939)
   * [[爆掛]美國海關收走我的筆電&手機三天....](https://www.ptt.cc/bbs/Gossiping/M.1494542282.A.968.html)
   
-族繁不及備載，挑一個講，其他帶過
+`族繁不及備載，挑一個講，其他帶過`
 
 
 ### 你的對手
 
 昨天的Sector “Ubiqitous Surveillance Technologies”提過了，政府與大型企業最容易與你們站在對立面，掌握國家資源與軍事力量的對手可以靠各種監控技術追蹤與
 
-特性、強度、他們想要什麼
+`特性、強度、他們想要什麼`
 
 * 國家
   * 監控講過了，帶過
-  * 美國、中國，選一邊？
-  * 
 * 企業
   * 監控...有講嗎？帶過
 * 利用個資賺錢的商人
@@ -71,6 +69,7 @@ Smartphone, WiFi, Internet of Things as well as many technologies can all survei
 ### 基本功
 
 * 你的對手是誰？
+  * 中國？美國？企業？還是以上皆是？
 * 價值認知
   * 有哪些東西是自己認為不能損失的？
   * 有哪些東西是自己認為不能被知道的？
@@ -90,6 +89,17 @@ Smartphone, WiFi, Internet of Things as well as many technologies can all survei
   * 基本認知
 * 其他外部追蹤機制
 
+### 常見攻擊入口
+
+* 本機端
+  * 更新！
+  * 下載執行檔
+  * 網頁弱點
+  * 公開服務
+  * 豬隊友
+* 網路服務
+
+
 ### 自保心法：X要Y不
 
 * 不隨意信任他人、空間、網路
@@ -101,12 +111,21 @@ Smartphone, WiFi, Internet of Things as well as many technologies can all survei
 * 隨時接觸新知識
 * 相信人性本善，也相信人性必有惡
 
+反制措施
+
+本機端
+正版軟體
+
 
 ### 工具
 
 * 網路
-  * 什麼是安全的網路？我怎麼判斷我的服務供應商可以信任？
+  * VPN
+    * 什麼是安全的網路？我怎麼判斷我的服務供應商可以信任？
+    * 
 * 主機
+  * how to choose a phone?
+  * how to choose a PC?
 * 機密通訊
 
 ### 案例解析？
@@ -135,6 +154,12 @@ NSA 我不用讀你的腦，但我可以比你更了解自己
 * 假資料
 * 不要讓自己的行為被“關注”
 * 已經被盯上了？用資訊淹沒你的對手
+
+### 進階防禦：多重影分身
+
+虛擬化
+
+多重裝置
 
 ### 進階防禦：Mission Impossable
 
