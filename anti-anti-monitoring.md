@@ -12,7 +12,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 授權方式 [CC: BY-SA](https://creativecommons.org/licenses/by-sa/3.0/tw/legalcode) 
 
-黑魔法防禦術 FB群組 => [https://www.facebook.com/groups/308549376151517](https://www.facebook.com/groups/308549376151517)
+黑魔法防禦術 FB群組 => <https://www.facebook.com/groups/308549376151517>
 
 前一章 [反監控](anti-monitoring.md)
 
@@ -26,32 +26,32 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 嘿嘿嘿，有些東西，是躲不掉的
 
-**黑名單**
+### 黑名單
 
 *   IP List
-*   domain有時會有一些特徵可以看....
-
+*   DNS Log
 *   Tor
+    *   domain有時會有一些特徵可以看....
 
-**協議特徵分析**
+
+### 協議特徵分析
 
 SSL、SSH、VPN、OpenVPN、Proxy、DNS Tunnel、Teamviewer、RDP
 
-**協議探測**
+### 協議探測
 
 好吧，我看不出來這份443流量到底是VPN還是HTTPS瀏覽
 
 那我連上去看看不就知道了？
 
-**流量分析**
+### 流量分析
 
 或許我看不懂裡面的內容，但我知道這肯定有什麼地方怪怪的
 
-VPN流量特性：單一目標穩定傳輸、流量可小可大
-
-DNS/ICMP VPN：會製造過大量的端點對端點DNS/ICMP流量
-
-P2P流量特性
+* VPN流量特性：單一目標穩定傳輸、流量可小可大
+* DNS/ICMP VPN：會製造過大量的端點對端點DNS/ICMP流量
+* P2P流量特徵
+* Server流量特徵
 
 ## GFW這麼幹
 

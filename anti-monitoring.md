@@ -35,7 +35,9 @@
 *   哪些資訊絕對不可公開？
 *   我可能會惹上什麼等級的對手？
     *   如果你身為一個記者或任何可能惹上老大哥的角色...
+    
 [https://theinitium.com/article/20170215-dailynews-Snowden/](https://theinitium.com/article/20170215-dailynews-Snowden/)    
+
 [https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%9B%9B%E5%85%AC%E6%B0%91](https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%9B%9B%E5%85%AC%E6%B0%91)
 
 **自我保護的階段**
@@ -53,7 +55,7 @@
 *   繞過：我該怎麼樣避免被監控？
 *   反反制：網管如何對抗翻牆？
 
-*   終極的防禦措施否存在？
+終極的防禦措施否存在？
 
 ## 環境強化
 
@@ -142,13 +144,13 @@
 
 *   公司的防火牆限制內對外傳輸只有80 / 443能走
 
-**HTTP / Socket Proxy**
+#### HTTP / Socket Proxy
 
 這個太入門了，不懂請Google
 
 中國不擋，因為能解
 
-[](https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8)[https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8](https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8)
+<https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8>
 
 anonymous proxy list: 
 
@@ -158,27 +160,21 @@ Browser addons: [foxyproxy](https://addons.mozilla.org/zh-tw/firefox/addon/foxyp
 
 自己架設是一種解法
 
-**WebProxy**
+#### WebProxy
 
 注意：他可以幫你繞過封鎖，但是沒有加密與混淆！
 
 不好擋，但因為能解所以...
 
-線上服務：[ ](http://anonymouse.org/anonwww.html)[](http://anonymouse.org/anonwww.html)[http://anonymouse.org/anonwww.html](http://anonymouse.org/anonwww.html)
+線上服務：<http://anonymouse.org/anonwww.html>
 
-自己架設（記得順便上SSL跟憑證）
+自己架設（記得順便上SSL跟憑證）: 著名的 [PHProxy](https://zh.wikipedia.org/wiki/PHProxy)
 
-著名的PHProxy
+其他替代方案 <http://alternativeto.net/software/phproxy/](http://alternativeto.net/software/phproxy/>
 
-[](https://zh.wikipedia.org/wiki/PHProxy)[https://zh.wikipedia.org/wiki/PHProxy](https://zh.wikipedia.org/wiki/PHProxy)
+#### 即時通訊軟體
 
-其他替代方案
-
-[](http://alternativeto.net/software/phproxy/)[http://alternativeto.net/software/phproxy/](http://alternativeto.net/software/phproxy/)
-
-**即時通訊軟體**
-
-[Telegram](https://telegram.org/)
+[**Telegram**](https://telegram.org/)
 
 以強大的安全性與隱私性作為出發點
 
@@ -192,7 +188,7 @@ Server會儲存一般通訊的紀錄
 
 中國拿他沒輒，所以也是封鎖的
 
-[Signal](https://whispersystems.org/) 
+[**Signal**](https://whispersystems.org/) 
 
 以強大的安全性與隱私性作為出發點
 
@@ -202,31 +198,25 @@ OpenSource Client, OpenSource Server
 
 目前被認為是比Telegram更加安全的選擇
 
-*   我沒怎麼在用，有人能分享心得嗎？
+我沒怎麼在用，有人能分享心得嗎？
 
-進階：自行架設
+**自行架設**
 
-XMPP通訊協定，可以選擇加密，可以自己掌握通訊密鑰
+[XMPP](https://zh.wikipedia.org/wiki/XMPP%E5%8D%94%E8%AD%B0%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%BB%9F%E9%AB%94%E5%88%97%E8%A1%A8)通訊協定，可以選擇加密，可以自己掌握通訊密鑰
 
-[](https://zh.wikipedia.org/wiki/XMPP%E5%8D%94%E8%AD%B0%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%BB%9F%E9%AB%94%E5%88%97%E8%A1%A8)[https://zh.wikipedia.org/wiki/XMPP%E5%8D%94%E8%AD%B0%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%BB%9F%E9%AB%94%E5%88%97%E8%A1%A8](https://zh.wikipedia.org/wiki/XMPP%E5%8D%94%E8%AD%B0%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%BB%9F%E9%AB%94%E5%88%97%E8%A1%A8)
+我之前架設的是[OpenFire](http://www.igniterealtime.org/projects/openfire/)，還算簡易好用
 
-我之前架設的是OpenFire，還算簡易好用
+如果希望支援多媒體，也有[擴充協定](https://conversations.im/omemo/)
 
-[](http://www.igniterealtime.org/projects/openfire/)[http://www.igniterealtime.org/projects/openfire/](http://www.igniterealtime.org/projects/openfire/)
+### 中級班:VPN
 
-如果希望支援多媒體，也有擴充協定
-
-[](https://conversations.im/omemo/)[https://conversations.im/omemo/](https://conversations.im/omemo/)
-<undefined><li>**中級班**</li>
-<li>**VPN**</li></undefined>
-
-**<s>PPTP</s>**
+#### <s>PPTP</s>
 
 （中國不擋，因為它能解...）
 
 地雷！別用！！！雖然他曾經是最廣為使用的加密方式，但是已經可以被即時破解了！
 
-**L2TP**
+#### L2TP
 
 （中國可能會擋）
 
@@ -234,7 +224,7 @@ XMPP通訊協定，可以選擇加密，可以自己掌握通訊密鑰
 
 許多NAS、防火牆、網路設備有內建
 
-**OpenVPN**
+#### OpenVPN
 
 （中國擋很大，因為它解不開）
 
@@ -242,29 +232,29 @@ XMPP通訊協定，可以選擇加密，可以自己掌握通訊密鑰
 
 支援Site 2 site, client server, TCP & UDP mode
 
-[](https://openvpn.net/index.php/open-source/downloads.html)[https://openvpn.net/index.php/open-source/downloads.html](https://openvpn.net/index.php/open-source/downloads.html)
+<https://openvpn.net/index.php/open-source/downloads.html>
 
 現在許多NAS、防火牆、網路設備有內建
 
-[](https://pritunl.com/)[https://pritunl.com/](https://pritunl.com/)
+<https://pritunl.com/>
 
 設定檔管理與建立、主機部署、Single SignOn、登入稽核、OpenSource
 
-**SSLVPN**
+#### SSLVPN
 
 （中國隨機擋）
 
-常見於商業防火牆方案，基本上就是透過443與SSL走加密連線，[長得像這樣](https://sslvpn2.ntu.edu.tw/dana-na/auth/url_default/welcome.cgi) 
+常見於商業防火牆方案，基本上就是透過443與SSL走加密連線，[長得像這樣 Fortigate SSLVPN](https://sslvpn2.ntu.edu.tw/dana-na/auth/url_default/welcome.cgi) 
 
-Fortigate SSLVPN  
+請留意NSA後門問題....
 
-*   請留意NSA後門問題....
+**自行架設**
 
-自己架？ [OpenVPN-als](https://sourceforge.net/projects/openvpn-als/)  
+[OpenVPN-als](https://sourceforge.net/projects/openvpn-als/)  
 
-*   前身adito, 一個很WTF的套件，Java based，跑在Linux搞半天一堆問題，結果Windows一次就過...
+前身adito, 一個很WTF的套件，Java based，跑在Linux搞半天一堆問題，結果Windows一次就過...
 
-**Tor**
+#### Tor
 
 （中國會擋）
 
@@ -284,13 +274,13 @@ NSA對Tor的監控
 
 有興趣的話，延伸閱讀：[Freenet](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E7%BD%91) 
 
-**其他**
+#### 其他
 
 [自由門](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E9%97%A8) 、無界瀏覽、puff、[shadowsocks](https://zh.wikipedia.org/wiki/Shadowsocks) 、[GoAgent](https://zh.wikipedia.org/wiki/GoAgent) 
 
 日系高隱私性p2p  [winny](https://zh.wikipedia.org/wiki/Winny) /[share](https://zh.wikipedia.org/wiki/Share) /[perfectdark](https://zh.wikipedia.org/wiki/Perfect_Dark) 
 
-**商業VPN?**
+#### 商業VPN
 
 比較不容易被擋（他們會幫你喬）
 
@@ -299,22 +289,23 @@ NSA對Tor的監控
 問題：你信任他嗎？
 
 *   PS : 如果是用別人信用卡, 真的出了什麼事情, 這樣隔了一層關係, 會相對很難查 XD 
-*   也不一定... 暗網都能追了
+*   ethen: 也不一定... 暗網都能追了
 
-**Remote Desktop**
+#### Remote Desktop
 
 （中國不擋）
 
 MS的協定，速度還不錯，但是中國使用有點悲劇，尤其在loading有動畫的網頁時
 
-小心被攻擊
+小心被攻擊，有漏洞的
 
-**Teamviewer**
+#### Teamviewer
 
-大體上同上，但是安全性有疑慮
-<undefined><li>**高級班**</li></undefined>
+大體上同上，優點是不需要public IP, 但是安全性有疑慮
 
-**SSH Tunnel**
+### 高級班
+
+#### SSH Tunnel
 
 *    其實ssh tunnel有可能會被擋就是w
 *   事實上很好擋，因為很容易辨識，但是中國比較少一開場就擋，因為畢竟還是網管的主要工具，而且很容易開分身，所以還是很好用的
@@ -342,7 +333,7 @@ Linux/mac下直接下指令就好，Windows可以用putty
 **   local# mkfifo /tmp/fifo
 *   local# sudo nc -l -u -p 53 < /tmp/fifo | nc localhost 6667 > /tmp/fifo
 
-[](http://zarb.org/~gc/html/udp-in-ssh-tunneling.html)[http://zarb.org/~gc/html/udp-in-ssh-tunneling.html](http://zarb.org/%7Egc/html/udp-in-ssh-tunneling.html)
+<http://zarb.org/%7Egc/html/udp-in-ssh-tunneling.html>
 
 維持連線
 
@@ -352,29 +343,30 @@ Linux/mac下直接下指令就好，Windows可以用putty
 
 *   ProxyChains
 
-*   [](https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/11.html)[https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/11.html](https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/11.html)
+<https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/11.html>
 
 進階技巧：端口轉發跟反向連結
 
 *   你是一個行動裝置的開發者，在自己公司裝了一個溫濕度感應器。網管不讓你開port到外面所以你沒辦法在外面持續修改該設備，所以你決定自己來
 *   ssh -NfR 2222:localhost:22 remote_ip
 
-*   到了機場，機場的WIFI面露邪佞的笑容跟你收取每MB 1USD的高額價碼
+#### DNS Tunnel
 
-**DNS Tunnel**
+到了機場，機場的WIFI面露邪佞的笑容跟你收取每MB 1USD的高額價碼
 
-[](http://code.kryo.se/iodine/)[http://code.kryo.se/iodine/](http://code.kryo.se/iodine/)
+<http://code.kryo.se/iodine/>
 
-**ICMP Tunnel**
+#### ICMP Tunnel
 
-[](http://code.gerade.org/hans/)[http://code.gerade.org/hans/](http://code.gerade.org/hans/)
-<undefined><li>**財財**</li></undefined>
+<http://code.gerade.org/hans/>
 
-**Meraki**
+#### Meraki
 
-[](http://www.vssecurity.com.tw/meraki)[http://www.vssecurity.com.tw/meraki](http://www.vssecurity.com.tw/meraki)
+<http://www.vssecurity.com.tw/meraki>
 
-**土砲王**
+Mash VPN network, 在中國使用良好，但是很貴...
+
+#### 土砲王
 
 自幹協議、流量分散、混淆
 
@@ -392,7 +384,7 @@ Linux/mac下直接下指令就好，Windows可以用putty
 
 **lcx.exe 內網端口轉發**
 
-[](http://www.111cn.net/sys/Windows/76766.htm)[http://www.111cn.net/sys/Windows/76766.htm](http://www.111cn.net/sys/Windows/76766.htm)
+<http://www.111cn.net/sys/Windows/76766.htm>
 
 *   linux則有nc
 
@@ -404,11 +396,11 @@ Linux/mac下直接下指令就好，Windows可以用putty
 
 **SPAMMIMIC**
 
-[](http://www.spammimic.com/)[http://www.spammimic.com/](http://www.spammimic.com/)
+<http://www.spammimic.com/>
 
 **匿名郵件服務**
 
-[](http://anonymouse.org/anonemail.html)[http://anonymouse.org/anonemail.html](http://anonymouse.org/anonemail.html)
+<http://anonymouse.org/anonemail.html>
 
 **實體安全**
 
@@ -421,34 +413,36 @@ Linux/mac下直接下指令就好，Windows可以用putty
 有去過中國的就會知道，雖然我們有這麼多防禦技術，但是並不完善：當你在網路與網路之間切換，VPN尚未連接上的瞬間，你是毫無保護的。對於一個偏執狂來說，輕則資料外洩，重則被植入後門、老大哥知道你在這裡，然後就被買普洱了（？）
 
 我們需要一個全通透、可信任、寧願沒有網路也不可讓自己裸奔的法寶...
-<undefined><li>**現成套件**</li></undefined>
 
-[](https://netaidkit.net)[https://netaidkit.net](https://netaidkit.net)
+### 現成套件
 
-[](http://store.netgate.com/SG-1000.aspx)[http://store.netgate.com/SG-1000.aspx](http://store.netgate.com/SG-1000.aspx)
+<https://netaidkit.net>
+
+[http://store.netgate.com/SG-1000.aspx](http://store.netgate.com/SG-1000.aspx)
 
 Example of some other similar ones
 
-[](https://www.indiegogo.com/projects/betterspot-a-smart-vpn-router-for-all-devices-security#/)[https://www.indiegogo.com/projects/betterspot-a-smart-vpn-router-for-all-devices-security#/](https://www.indiegogo.com/projects/betterspot-a-smart-vpn-router-for-all-devices-security#/)
+[https://www.indiegogo.com/projects/betterspot-a-smart-vpn-router-for-all-devices-security#/](https://www.indiegogo.com/projects/betterspot-a-smart-vpn-router-for-all-devices-security#/)
 
-[](https://www.indiegogo.com/projects/shellfire-box-vpn-evolution-security-technology#/)[https://www.indiegogo.com/projects/shellfire-box-vpn-evolution-security-technology#/](https://www.indiegogo.com/projects/shellfire-box-vpn-evolution-security-technology#/)
+[https://www.indiegogo.com/projects/shellfire-box-vpn-evolution-security-technology#/](https://www.indiegogo.com/projects/shellfire-box-vpn-evolution-security-technology#/)
 
-[](https://www.indiegogo.com/projects/anonabox-access-deep-web-tor-privacy-router#/)[https://www.indiegogo.com/projects/anonabox-access-deep-web-tor-privacy-router#/](https://www.indiegogo.com/projects/anonabox-access-deep-web-tor-privacy-router#/)
+[https://www.indiegogo.com/projects/anonabox-access-deep-web-tor-privacy-router#/](https://www.indiegogo.com/projects/anonabox-access-deep-web-tor-privacy-router#/)
 
-[](https://www.indiegogo.com/projects/invizbox-privacy-made-easy#/)[https://www.indiegogo.com/projects/invizbox-privacy-made-easy#/](https://www.indiegogo.com/projects/invizbox-privacy-made-easy#/)
+[https://www.indiegogo.com/projects/invizbox-privacy-made-easy#/](https://www.indiegogo.com/projects/invizbox-privacy-made-easy#/)
 
 And check out the prices on Amazon
 
-[](https://www.amazon.com/Anonabox-PRO-Wi-Fi-Tor-Router/dp/B01AYC27YK/)[https://www.amazon.com/Anonabox-PRO-Wi-Fi-Tor-Router/dp/B01AYC27YK/](https://www.amazon.com/Anonabox-PRO-Wi-Fi-Tor-Router/dp/B01AYC27YK/)
+[https://www.amazon.com/Anonabox-PRO-Wi-Fi-Tor-Router/dp/B01AYC27YK/](https://www.amazon.com/Anonabox-PRO-Wi-Fi-Tor-Router/dp/B01AYC27YK/)
 
 如果你有Raspberry pi, 可以自行安裝這個套件
 
-[](https://pi-hole.net/)[https://pi-hole.net/](https://pi-hole.net/)
-<undefined><li>**硬體**</li></undefined>
+[https://pi-hole.net/](https://pi-hole.net/)
 
-[](https://world.taobao.com/item/523387222035.htm?fromSite=main)[https://world.taobao.com/item/523387222035.htm?fromSite=main](https://world.taobao.com/item/523387222035.htm?fromSite=main)
+#### 硬體
 
-[](https://item.taobao.com/item.htm?spm=a230r.1.14.88.7NHRc0&id=42154745826&ns=1&abbucket=9#detail)[https://item.taobao.com/item.htm?spm=a230r.1.14.88.7NHRc0&id=42154745826&ns=1&abbucket=9#detail](https://item.taobao.com/item.htm?spm=a230r.1.14.88.7NHRc0&id=42154745826&ns=1&abbucket=9#detail)
+[https://world.taobao.com/item/523387222035.htm?fromSite=main](https://world.taobao.com/item/523387222035.htm?fromSite=main)
+
+[https://item.taobao.com/item.htm?spm=a230r.1.14.88.7NHRc0&id=42154745826&ns=1&abbucket=9#detail](https://item.taobao.com/item.htm?spm=a230r.1.14.88.7NHRc0&id=42154745826&ns=1&abbucket=9#detail)
 
 ## 網頁瀏覽反制技巧
 
@@ -472,14 +466,14 @@ And check out the prices on Amazon
 
 **取代可能被監控的軟體**
 
-粉碎稜鏡（[prism-break.org](https://prism-break.org) ），由 Peng Zhong 設立的網站，與[電子前哨基金會](https://zh.wikipedia.org/wiki/%E7%94%B5%E5%AD%90%E5%89%8D%E5%93%A8%E5%9F%BA%E9%87%91%E4%BC%9A)並沒有任何正式關係。<sup>[[37]](https://zh.wikipedia.org/wiki/%E7%A8%9C%E9%8F%A1%E8%A8%88%E7%95%AB#cite_note-44)</sup>「粉碎稜鏡」列出眾多[非盈利組織](https://zh.wikipedia.org/wiki/%E9%9D%9E%E7%9B%88%E5%88%A9%E7%BB%84%E7%BB%87)所撰寫發布的各種[自由軟體](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6)，從取代Windows和Mac     OS的作業系統，到各式各樣的常用軟體，以及去中心化的網路服務（電子郵件、雲端儲存和運算等等），都列出了功能、優缺點的比較，以便讓人們取代涉及稜鏡計畫的公司，以及他們所製作的、以盈利為目的或者封閉源碼之商業軟體和服務，來保護隱私，躲避例如美國、英國政府的監控。
+粉碎稜鏡（[prism-break.org](https://prism-break.org) ），由 Peng Zhong 設立的網站，與[電子前哨基金會](https://zh.wikipedia.org/wiki/%E7%94%B5%E5%AD%90%E5%89%8D%E5%93%A8%E5%9F%BA%E9%87%91%E4%BC%9A)並沒有任何正式關係。「粉碎稜鏡」列出眾多[非盈利組織](https://zh.wikipedia.org/wiki/%E9%9D%9E%E7%9B%88%E5%88%A9%E7%BB%84%E7%BB%87)所撰寫發布的各種[自由軟體](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6)，從取代Windows和Mac OS的作業系統，到各式各樣的常用軟體，以及去中心化的網路服務（電子郵件、雲端儲存和運算等等），都列出了功能、優缺點的比較，以便讓人們取代涉及稜鏡計畫的公司，以及他們所製作的、以盈利為目的或者封閉源碼之商業軟體和服務，來保護隱私，躲避例如美國、英國政府的監控。
 
 *   避開偵查的範例
-*   [](https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%9B%9B%E5%85%AC%E6%B0%91)[https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%9B%9B%E5%85%AC%E6%B0%91](https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%9B%9B%E5%85%AC%E6%B0%91)
+*   <https://zh.wikipedia.org/wiki/%E7%AC%AC%E5%9B%9B%E5%85%AC%E6%B0%91>
 
 Mac防火牆
 
-[](http://alternativeto.net/software/little-snitch/)[http://alternativeto.net/software/little-snitch/](http://alternativeto.net/software/little-snitch/)
+<http://alternativeto.net/software/little-snitch/>
 
 **魔法**
 
@@ -497,7 +491,7 @@ Mac防火牆
 
 **怎麼查詢憑證的指紋是否正確？**
 
-[](https://www.grc.com/fingerprints.htm)[https://www.grc.com/fingerprints.htm](https://www.grc.com/fingerprints.htm)
+<https://www.grc.com/fingerprints.htm>
 
 FB的憑證追蹤 
 
@@ -511,11 +505,11 @@ FB的憑證追蹤
 
 **翻進去？**
 
-[](https://www.kocpc.com.tw/archives/4198)[https://www.kocpc.com.tw/archives/4198](https://www.kocpc.com.tw/archives/4198)
+<https://www.kocpc.com.tw/archives/4198>
 
 VPN Gate
 
-[](http://www.vpngate.net/cn/)[http://www.vpngate.net/cn/](http://www.vpngate.net/cn/)
+<http://www.vpngate.net/cn/>
 
 *   這一樣是翻進去的方法，當初也是為了針對GFW而設計的服務，用來降低VPN的翻牆門檻(雖然後面VPN已經無法穿牆了)，但因為某一些網站因為某些因素(包含但不一定只監控)有限制區域IP訪問，因此有玩家利用這種方式翻進去
 
@@ -525,7 +519,7 @@ VPN Gate
 *   選項：混淆（混入人群中）
     *   引入大量資訊混淆
     *   用自拍累死FBI：監控那個監控你的人
-    *   [](https://theinitium.com/article/20160904-dailynews-selfies-fbi/)[https://theinitium.com/article/20160904-dailynews-selfies-fbi/](https://theinitium.com/article/20160904-dailynews-selfies-fbi/)
+    *   <https://theinitium.com/article/20160904-dailynews-selfies-fbi/>
 
     *   通訊管道越複雜越難以追蹤
 
@@ -541,4 +535,4 @@ VPN Gate
 
 但，問題在於這些並非秘密，而是已經被廣為使用的躲避機制，然後我們真的要抓的惡人往往比這些技巧更加刁鑽。我們必須要有系統性的認知，才有辦法對抗這些有技術有惡意的對手，這也是我們下一章節的內容：
 
- [反反監控](https://realdefense.hackpad.com/7Ym93Ixn8AC) 
+ [反反監控](anti-anti-monitoring.md) 
