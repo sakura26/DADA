@@ -1,4 +1,6 @@
-## 網路架構基礎
+[TOC]
+
+# 網路架構基礎
 
 這裡是資安防禦系列課程的基礎篇，介紹資訊安全的基礎知識
 
@@ -15,7 +17,7 @@ Bonus:
 
 *   沒時間講ＱＱ
 
-**必修**
+## 必修
 
 電腦網路、**你至少要會用IP分享器**
 
@@ -35,13 +37,13 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 基本上，我不想講。
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_MRy34vXQV5Q_p.568925_1474185721504_螢幕快照 2016-09-18 下午4.00.31.png)
+![](img/network_intro_1.png)
 
 但是我會確定大家都知道：Layer 7、TCP/IP、ARP、路由、交換器、伺服器
 
 *   提問：有沒有人有自己看過封包的？
 
-**建議自學方向**
+### 建議自學方向
 
 *   CCNA是不錯的教材
 *   自己架一些服務來玩
@@ -51,11 +53,11 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 我想有不少人還沒有自己管理或架設過網路
 
-**常見的簡化網路架構**
+### 常見的簡化網路架構
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_bYcVHyU93i2_p.568925_1468918546175_%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202016-07-19%20%E4%B8%8B%E5%8D%884.44.13.png)
+![](img/network_intro_2.png)
 
-**網路區隔？**
+### 網路區隔？
 
 用意：
 
@@ -64,7 +66,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 來點名詞解釋
 
-**常見網路區隔**
+### 常見網路區隔
 
 *   Internet
 
@@ -94,7 +96,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *   一般是不提供公開服務的Server網段，也常常是機房的代稱
 
-**常見網路設備**
+### 常見網路設備
 
 *   路由器
 *   核心交換器
@@ -120,7 +122,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *   SDN
 
-**常見資安設備**
+### 常見資安設備
 
 這裡是這堂課主要要傳遞的東西
 
@@ -197,7 +199,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   ＊沙箱環境可能與實際環境不同，惡意程式可能在沙箱中無效，但是在實際使用者環境則會爆發
 *   Virustotal.com
 
-**常見服務**
+### 常見服務
 
 對外 / 對內
 
@@ -211,7 +213,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *   列不完的啦，自己去看鳥哥的網站 [](http://linux.vbird.org/)http://linux.vbird.org/
 
-**高風險目標**
+### 高風險目標
 
 *   每個組織都不一樣，請務必先了解組織特性來羅列高風險目標
 
@@ -229,7 +231,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *   以上是會讓網管很痛苦的目標
 
-**接手一個網路，你會想要搞清楚**
+### 接手一個網路，你會想要搞清楚
 
 *   網路的範圍
 *   出入口（邊界）
@@ -242,59 +244,59 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 ## 網路設計
 
-**考量**
+### 考量
 
 傳輸量、反應時間、靈活性、擴充能力、成本、地理位置、異質網路、失敗復原...
 
 但這些不是我們的考量重點
 
-**駭客怎麼打？**
+### 駭客怎麼打？
 
-*   取得內部領地
+*    取得內部領地
 
-        *   直接攻擊對外服務並取得權限
-    *   透過社交工程直接進入內部網路
-    *   透過攻下友軍網路，並透過配置不良的Extranet進入內部網路
+         *   直接攻擊對外服務並取得權限
+     *   透過社交工程直接進入內部網路
+     *   透過攻下友軍網路，並透過配置不良的Extranet進入內部網路
 
-*   探索網路環境，找到高價值目標
+*    探索網路環境，找到高價值目標
 
-        *   network scan、Directory List、取得網路設備權限...
+     *   network scan、Directory List、取得網路設備權限...
 
-*   取得內部權限
+*    取得內部權限
 
-        *   NTLM Hash、Sniffing、Key logger、更多社交工程...
+     *   NTLM Hash、Sniffing、Key logger、更多社交工程...
 
-*   拿下高價值目標
+*    拿下高價值目標
 
-        *   Checkmate等級的目標
+     *   Checkmate等級的目標
 
-*   潛伏並持續獲取資源
+*    潛伏並持續獲取資源
 
-**安全基礎原則**
+### 安全基礎原則
 
 *   最小化攻擊面 ＆ 最小權限原則
 *   釐清每個區段的特性
 *   規範不同區段的網路流動
 *   透過設備讓這些規範成為現實
 
-**如何限制流動**
+### 如何限制流動
 
-偵測
+#### 偵測
 
 *   Firewall log
 *   IDS, WAF, ...
 
-實行
+#### 實行
 
 *   Firewall policy
 *   Switch ACL
 *   IDP, WAF...
 
-稽核
+#### 稽核
 
 *   用公司規範來達到嚇阻效果
 
-**常見的錯誤網路配置**
+### 常見的錯誤網路配置
 
 *   通通丟在同一個Lan
 *   把 Extranet 網路直接接進 Intranet
@@ -311,7 +313,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *   免費的最貴
 
-**實體隔離**
+### 實體隔離
 
 *   使用專用的網段放置資安設備
 
@@ -323,18 +325,18 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 ## 你會需要的技能
 
-**CCNA**
+### CCNA
 
 網路知識是一切的基礎，而CCNA裡面包含了大多數你所需要知道的東西，可以作為不錯的教材
 
 *   CCNA學到一半，你就可以使用很多Hacks了，我會覺得這個學習ＣＰ值相當高
 *   不一定要考證照，證照不過是張紙，怎麼應用才是重點
 
-**架個服務、機房或管個網路**
+### 架個服務、機房或管個網路
 
 實戰是累積最快的方法
 
-**封包分析**
+### 封包分析
 
 不要猜，直接去看封包
 
@@ -343,7 +345,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 ## 網路成長記錄
 
-**Lv.0：網路？什麼網路？**
+### Lv.0：網路？什麼網路？
 
 大多數新創、小型企業往往只有兩三台主機或設備，大多數都是申辦個網路，小烏龜上有洞就插，此時跟普通網路用戶沒有什麼兩樣
 
@@ -355,9 +357,9 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   容易進行中間人攻擊
 *   在這個階段的客戶大多數未曾考慮安全性
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_MRy34vXQV5Q_p.568925_1472891176936_螢幕快照 2016-09-03 下午4.25.59.png)
+![](img/network_intro_3.png)
 
-**Lv.1：主機好像有點多**
+### Lv.1：主機好像有點多
 
 開始出現各種奇怪的問題跟需求，開始購置如NAS之類的內部服務裝置開始做資料儲存與協作，不過裡面基本上都還是一坨
 
@@ -374,9 +376,9 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   惡意程式於內網傳播機率大增
 *   機敏性資料開始容易被找到
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_MRy34vXQV5Q_p.568925_1472891566979_螢幕快照 2016-09-03 下午4.32.30.png)
+![](img/network_intro_4.png)
 
-**Lv.5：開始建造世界奇觀**
+### Lv.5：開始建造世界奇觀
 
 開始有對外提供服務的需求，但是又不想更動現有架構（或無人可以協助規劃），然後所有東西都塞在一起，這是最容易被入侵的階段，大多數中小企業也都卡在這個階段
 
@@ -394,13 +396,13 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   敏感資料集中
 *   架構開始複雜但一般還是沒有配置負責人
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_MRy34vXQV5Q_p.568925_1472891877277_螢幕快照 2016-09-03 下午4.37.38.png)
+![](img/network_intro_5.png)
 
-**Lv.10：架構開始成形**
+### Lv.10：架構開始成形
 
 開始有了網段的概念，網路流量開始可以被預測與規劃
 
-優勢：
+#### 優勢：
 
 *   流量可被預測與控制
 
@@ -413,7 +415,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   高風險區塊可以被特別關注
 *   開始有專門的人來負責網路與主機
 
-缺點：
+#### 缺點：
 
 *   資金投入提高（導入設備）
 *   各部門建立各自的網段，可能會遇上政治問題，管理複雜度提高
@@ -421,26 +423,26 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   各電腦尚各自為政，難以統一管理，容易產生弱點
 *   尚無法監控發生了什麼事
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_bYcVHyU93i2_p.568925_1468918546175_%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202016-07-19%20%E4%B8%8B%E5%8D%884.44.13.png)
+![](img/network_intro_6.png)
 
-**Lv.20：導入網路管理架構**
+### Lv.20：導入網路管理架構
 
 員工數量多了起來，各自分散的數百台電腦已經難以一個個人工維護，因此開始導入AD、WSUS、資產管理系統、防毒管理系統等工具，同時因為增加的複雜度，更進階的安全設備也開始被導入
 
-優點：
+#### 優點：
 
 *   更一致性的管控（病毒更新、上Patch、群組原則、系統設定、使用者控管等）
 *   單一簽入允許以使用者身份進行資源管控
 *   對資訊流向、特性開始有更深層的認識與控制權
 
-缺點：
+#### 缺點：
 
 *   出現了Checkmate等級的攻擊目標
 *   管理者權限已經大到可以一人隻身毀滅一家公司的程度
 *   AD就是最大的後門...
 *   企業開始需要聘請專家來處理這些高度複雜度的設備
 
-**Lv.50：張開眼睛**
+### Lv.50：張開眼睛
 
 到目前為止，所有的一切都還只是設計，實作，然後祈禱。
 
@@ -448,13 +450,13 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 如同人類身上有眾多神經接收資訊，對大型的資訊體來說也是一樣。建構一個神經網路，接收來自組織各地的資訊，並透過大量的數據分析、駭客的知識、管理的經驗來評判，最終給出現況判斷，以及行動方向。
 
-優點：
+#### 優點：
 
 *   開始能夠正確判斷現況
 *   讓資源用在更準確的地方
 *   可以有意識地降低資安事件的發生機率與損失
 
-缺點：
+#### 缺點：
 
 *   非常高的建置與維護成本
 *   需要真正的專家
@@ -477,20 +479,23 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   "你的設備真的安全嗎....?"
 *   攻性防壁 是有可能的？
 
-<undefined><li>**消失的密室：一個無法被感知的監聽網路**</li></undefined>
+**消失的密室：一個無法被感知的監聽網路**
 
 ## 網路竊聽
 
-**傳統上的竊聽手法**
-<undefined><li>**基本工具**</li></undefined>
+### 傳統上的竊聽手法
+
+#### 基本工具
 
 tcpdump / [Wireshark](https://www.wireshark.org/download.html) 
-<undefined><li>**你有管理權限：**</li></undefined>
+
+##### 你有管理權限：
 
 Port Mirror
 
 Tapping
-<undefined><li>**你沒有管理權限：**</li></undefined>
+
+##### 你沒有管理權限：
 
 Fake AP
 
@@ -509,7 +514,7 @@ attack by specific application
 *   e.g. Web Proxy Auto Detect ([WPAD](https://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol#Security) ) 
 *   e.g. DNS Spoofing
 
-**Tap：一個在網路上進行分流的裝置**
+#### Tap：一個在網路上進行分流的裝置
 
 三種網路的Tap
 
@@ -522,20 +527,20 @@ attack by specific application
 [](http://cdn.ttgtmedia.com/informationsecurity/images/vol2iss11/ism_vol2iss11_f4-fiberhack.jpg)http://cdn.ttgtmedia.com/informationsecurity/images/vol2iss11/ism_vol2iss11_f4-fiberhack.jpg
 
 [](http://andrewmallett.net/tech/networks/pinouts.gif)http://andrewmallett.net/tech/networks/pinouts.gif
-<ul><li>1000 並沒有明確區分輸入輸出腳位，所以沒有辦法做被動式的tapping</li>
-<li>實作Passive RJ45 Tap</li>
 
-*   [](http://www.instructables.com/id/Make-a-Passive-Network-Tap/?ALLSTEPS)http://www.instructables.com/id/Make-a-Passive-Network-Tap/?ALLSTEPS
-*   [](http://www.fragmentationneeded.net/2012/01/ethernet-taps-dont-get-me-started.html)http://www.fragmentationneeded.net/2012/01/ethernet-taps-dont-get-me-started.html
+* 1000 並沒有明確區分輸入輸出腳位，所以沒有辦法做被動式的tapping
+* 實作Passive RJ45 Tap
+* [](http://www.instructables.com/id/Make-a-Passive-Network-Tap/?ALLSTEPS)http://www.instructables.com/id/Make-a-Passive-Network-Tap/?ALLSTEPS
+* [](http://www.fragmentationneeded.net/2012/01/ethernet-taps-dont-get-me-started.html)http://www.fragmentationneeded.net/2012/01/ethernet-taps-dont-get-me-started.html
 
-*   ![](http://2.bp.blogspot.com/-mXuaUa65yTo/VA45KtqXSXI/AAAAAAAAEjs/ch9-CaNcw0g/s1600/Network%2BTap.jpg)
-</ul class="comment">
+* ![](img/network_intro_7.png)
+  </ul class="comment">
 
-*   [](http://2.bp.blogspot.com/-mXuaUa65yTo/VA45KtqXSXI/AAAAAAAAEjs/ch9-CaNcw0g/s1600/Network%2BTap.jpg)http://2.bp.blogspot.com/-mXuaUa65yTo/VA45KtqXSXI/AAAAAAAAEjs/ch9-CaNcw0g/s1600/Network%2BTap.jpg
+* [](http://2.bp.blogspot.com/-mXuaUa65yTo/VA45KtqXSXI/AAAAAAAAEjs/ch9-CaNcw0g/s1600/Network%2BTap.jpg)http://2.bp.blogspot.com/-mXuaUa65yTo/VA45KtqXSXI/AAAAAAAAEjs/ch9-CaNcw0g/s1600/Network%2BTap.jpg
 
 嗯....把傳送與接收分開來錄，結果兩邊都只看到一半，怎麼辦？
 
-**封包重組**
+#### 封包重組
 
 *   mergepcap -a 1.pcap 2.pcap -w result.pcap
 
@@ -543,11 +548,11 @@ attack by specific application
 
 嗯？為什麼要花這麼多功夫做這些事情來竊聽？直接開Wireshark來聽不好嗎？
 
-**竊聽偵測技術**
+#### 竊聽偵測技術
 
 [](http://www.securityfriday.com/promiscuous_detection_01.pdf)http://www.securityfriday.com/promiscuous_detection_01.pdf
 
-![](https://hackpad-attachments.s3.amazonaws.com/realdefense.hackpad.com_MRy34vXQV5Q_p.568925_1474204722024_螢幕快照 2016-09-18 下午9.18.18.png)
+![](img/network_intro_8.png)
 
 [](https://nmap.org/nsedoc/scripts/sniffer-detect.html)https://nmap.org/nsedoc/scripts/sniffer-detect.html
 
@@ -561,7 +566,7 @@ attack by specific application
 
 問：有沒有用過防火牆的？
 
-**基礎防火牆**
+### 基礎防火牆
 
 封包過濾 -> 狀態感知 -> 應用感知
 
@@ -572,39 +577,39 @@ attack by specific application
 *   iptables
 *   ebtables
 
-**先釐清**
+#### 先釐清
 
 *   區域規劃
 *   開放什麼服務、什麼協定、給誰
 *   什麼地方有什麼流量要到什麼地方
 
-**大原則**
+#### 大原則
 
 *   Default drop
 *   Simple filter first
 *   Log if possible
 
-**防火牆該放在什麼地方？**
+#### 防火牆該放在什麼地方
 
 網路的邊界、區域的邊界、主機的邊界
 
 任何你想要記錄流量的地方
 
-**免費的防火牆**
+#### 免費的防火牆
 
 *   所有Linux內建的iptables
 *   所有BSD內建到IPFW
 *   所有Windows也有內建防火牆：從XP SP2開始
 *   pfsense 
 
-**企業級防火牆？**
+#### 企業級防火牆？
 
 *   穩定、穩定、穩定
 *   效能
 *   報表
 *   Log
 
-**UTM的防火牆？**
+#### UTM的防火牆？
 
 功能 v.s. 效能、安全性、穩定性
 
@@ -616,26 +621,29 @@ attack by specific application
 
 缺點：效能、深度
 
-**Iptable sample**
+#### Iptable sample
 
-*   # 預設原則
+# 預設原則
+
 *   iptables -P OUTPUT ACCEPT      # 可以的話，連對外都不要預設accept
 *   iptables -P INPUT DROP
-**   # 過濾不正常流量（基本偽裝防護）
+    **   # 過濾不正常流量（基本偽裝防護）
 *   iptables -F
 *   iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
 *   iptables -A INPUT -p tcp ! --syn -m state --state NEW -j DROP
 *   iptables -A INPUT -p tcp --tcp-flags ALL ALL -j DROP
-**   # 開放本地流量
+    **   # 開放本地流量
 *   iptables -A INPUT -i lo -j ACCEPT
-**   # 開放公開服務 （封包過濾）
+    **   # 開放公開服務 （封包過濾）
 *   iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 *   iptables -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
-**   # 指定範圍開放服務
+    **   # 指定範圍開放服務
 *   iptables -A INPUT -p tcp -s YOUR_IP_ADDRESS -m tcp --dport 22 -j ACCEPT
-**   # 允許已被認可的TCP流量通過 （狀態感知）
+    **   # 允許已被認可的TCP流量通過 （狀態感知）
 *   iptables -I INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
-![](http://www.4e00.com/blog/img/linux/iptables/iptables-process-flow.png)
+![](img/network_intro_9.png)
+
+圖片來源：
 
 [](http://www.4e00.com/blog/img/linux/iptables/iptables-process-flow.png)http://www.4e00.com/blog/img/linux/iptables/iptables-process-flow.png
