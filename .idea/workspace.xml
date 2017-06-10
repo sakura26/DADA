@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0264766b-e38a-4dd9-863a-10e32c17d828" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host_defense_intro.md" afterPath="$PROJECT_DIR$/host_defense_intro.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/etc-rc-d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/lsmod.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/nessus_report1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/nessus_report2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/nessus_report3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/nessus_scan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/netstat-grep.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rc-s-d-local.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/service-status-all.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/x-windows-install.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host_defense_practice.md" afterPath="$PROJECT_DIR$/host_defense_practice.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +33,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="336">
-                <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+                <caret line="67" column="29" lean-forward="false" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -38,8 +48,24 @@
         <entry file="file://$PROJECT_DIR$/host_defense_practice.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="565">
-                <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+              <first_editor relative-caret-position="445">
+                <caret line="551" column="0" lean-forward="true" selection-start-line="551" selection-start-column="0" selection-end-line="551" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="Gfm">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log_analysis.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log_analysis.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -93,11 +119,9 @@
       <find>*&lt;undefined&gt;&lt;li&gt;</find>
       <find>**&lt;undefined&gt;&lt;li&gt;</find>
       <find>**</find>
-      <find>**</find>
       <find>####</find>
       <find>#</find>
       <find>##</find>
-      <find>####</find>
       <find>#####</find>
       <find>\# 基礎知識\n\n這邊是給對資訊還沒有深入\，但想要往安全之路前進的朋友的入門指引\n\n\*   教材部分我會列出容易取得的部分\，但請根據自己的特性選擇\。如果擅長自學\，可以自己買書或網路上查詢效果會不錯\，但如果自制或時間控制能力略差\，請選擇坊間的付費課程\，這樣至少可以確保你會花時間在上面\n\*   但如果花錢買付費課程卻發現自己完全沒興趣\，那\.\.\. 就放棄吧\（爆\）\n\n由於防禦本身需要環環相扣\，任何一環斷裂都可能導致入侵\，所以對各方面的基礎知識的好奇與瞭解都是重要的\。不過其中有幾個基礎中的基礎是你一定需要的\：\n\n\#\# 網路概論\n\n大多數的攻擊都基於網路\（或透過網路\）\，所以對網路的瞭解是必要的\n\n\#\#\#\# CCNA\n\n最快速全面的學習方式\，我推薦CCNA的課程\。\n\n這是CISCO的網路認證教材\，題材包含了各種網路基礎與網路設備的知識\，也會提到一點設備操作\。請以學習知識的角度來讀這份教材\（不需要背指令也不要為了考試而讀\，除非你想找網管工作\）\n\n如果你是資訊相關科系\，系上可能會有開課\，同時坊間如Ｘ匠\、資Ｘ會\、恆Ｘ之類也有開課\，書店也有很多的書可以買\，亦有網路上的公開教材\，反正很好取得\。\n\#\#\#\#\# 讀完你會了解\：\n\n網路如何運作\、網路的組成與功能\、邏輯七層架構\、一個連線建立起來的時候在每一層中發生了什麼事\、常見設備的運作原理\（尤其是交換器與路由器\）\n\#\#\#\# 檢查點\：\n\n試著在自己家裡架設一個小型機房網路\，裡面包含 路由器\、防火牆\、內部的網路\（也就是你日用的電腦會連上的\）\，Server\（參照下面\&lt;a href\=\&quot;\#machine\&quot;\&gt;\[主機概論\]\&lt;\/a\&gt;\）\，可以的話包含一個獨立的DMZ網段來放置這台Server\n\n\*   我自己當時讀到一半而已\，就有能力發動ARP Spoofing之類的攻擊了\，當時是用來突破宿舍的流量限制\n\*   這份教材事實上相當實用\，端看你理解他多深\n\n當你擁有CCNA的知識的時候\，接下來你應該可以輕鬆地進入閱讀封包的領域\n\n\#\#\# 封包閱讀\n\n封包閱讀大多數我們會使用Wireshark這套OpenSource的軟體\，他將封包閱讀從討厭的專門技術變成人人都能幹的輕鬆事\，所以先推薦上網路找找看相關的教學\。\n\n封包閱讀能力非常非常重要\，他可以讓你更加深刻的了解到前面網路學的那一堆鬼東西到底是怎麼回事\，也幫助你真正了解駭客到底幹了什麼 \- 所謂駭客就是在各種\“理應如此\”中製造意外的好朋友\（笑\n\n一樣\，你可以在書店找到相關的書寫著如何使用Wireshark進行網路監聽與分析\，也有人開相關課程\（比較少\，請Google\）\。\n\n雖然Wireshark會幫你解析大多數的封包格式\，但如果你想要看某些不熟悉的封包格式的話\，建議上Wiki查\，在協定的頁面中一般會有提供封包結構\，例如\[ARP\]\(https\:\/\/zh\.wikipedia\.org\/wiki\/\%E5\%9C\%B0\%E5\%9D\%80\%E8\%A7\%A3\%E6\%9E\%90\%E5\%8D\%8F\%E8\%AE\%AE\#\.E6\.95\.B0\.E6\.8D\.AE\.E5\.8C\.85\.E7\.BB\.93\.E6\.9E\.84\)  \n\n\*   如果你不熟悉 \[二進位\]\(https\:\/\/zh\.wikipedia\.org\/zh\-tw\/\%E4\%BA\%8C\%E8\%BF\%9B\%E5\%88\%B6\) \、\[十六進位\]\(https\:\/\/zh\.wikipedia\.org\/wiki\/\%E5\%8D\%81\%E5\%85\%AD\%E8\%BF\%9B\%E5\%88\%B6\) 的話\，可以先看一下這裡\。\n\*   不需要自己算\，用計算機就好\（\[windows\]\(http\:\/\/isvincent\.pixnet\.net\/blog\/post\/34431871\-windows\-7\-\%E5\%A5\%BD\%E7\%94\%A8\%E7\%9A\%84\%E5\%B0\%8F\%E7\%AE\%97\%E7\%9B\%A4\) \/\[mac\]\(http\:\/\/appleuser\.com\/2014\/03\/11\/mac\-computer\/\) 都有內建工程\/程式的計算機模式\）\n\#\#\# 讀完你會了解\：\n\n網路真實的運作方式\、網路的除錯法\n\#\#\#\# 檢查點\：\n\n嘗試用Wireshark監聽封包\，撈出你自己的ptt或FTP帳號密碼\n\n然後\，你會需要了解常見的服務\n\n\#\#\# 網路服務\n\n這個部分請先看完下面的主機概論之後再回來\n\n單有網路是沒有用的\，網路上面跑的是服務\，例如網頁服務\、FTP服務\、語音服務等等\n\n又其中有幾個重要的基礎服務你最好要清楚底下是怎麼運作的\，如DNS\、DHCP\、NAT\、Firewall\、www\n\n其次\，去了解你有興趣或想架設的服務\，如遊戲Minecraft Server\n\n教材一樣是\[鳥哥的Linux\]\(http\:\/\/linux\.vbird\.org\/\) 自學\（Linux架站文件\）\，書店書也是一大堆\，自己搞定\n\#\#\#\# 讀完你會了解\：\n\n該服務的運作原理\、如何安裝\、如何配置設定檔\、如何做基礎除錯\n\#\#\#\# 檢查點\：\n\n任選一個你有興趣\（或你朋友需要\）的服務\，把他架設起來\，提供給你自己\（或你朋友更好\）使用\，公開維護一段時間\n\n\#\# \&lt;p id \=\'machine\'\&gt;主機概論\&lt;\/p\&gt; \n\n\#\#\# Linux概論\n\n不要再告訴我你很熟Windows了\，駭客跟高階網管用的是Linux\，這是基礎技能\n\n多數伺服器基於Linux\，而多數服務是從Linux開始開發\n\n你接觸到的大多數網路設備的核心都是基於Linux\，而多數嵌入式裝置\、IoT\、你的手機也是基於Linux\n\n而Mac更是從BSD改過來的Unix分支\，裡面絕大多數指令都與Linux共同\n\n學會Linux\, 你的世界會瞬間開闊起來\n\n我推薦去\[鳥哥的Linux\]\(http\:\/\/linux\.vbird\.org\/\) 自學\（Linux基礎文件\）\，同時也有很多如Ｘ匠之類有開相關課程甚至證照班\（老樣子\，不要以考照為前提\）\，書店書也是一大堆\n\#\#\#\# 讀完你會了解\：\n\n如何使用操作Linux\、檔案系統的結構\、命令行的使用\、定時排程的使用\、啟動關閉服務\、Runlevel\n\#\#\#\# 檢查點\：\n\n裝好一個Linux\（Ubuntu或任何你想玩的\）\，啟用自動更新\，並能使用SSH遠端連進去操作\n\n\#\# 進階\n\n以上幾點的技能有了\，你就擁有基礎的網管技能\，甚至比許多本科系剛出來的學生強了\，去找網管工作應該不是問題ＸＤ\n\n但\，我們提過資訊安全事實上是二轉職業\，如果想走資訊安全\，你還需要\.\.\.\n\n幾大分支\n\n網站\n\n網路\n\n主機</find>
       <find>讀完你會了解</find>
@@ -107,18 +131,22 @@
       <find>**&lt;/li&gt;&lt;/undefined&gt;</find>
       <find>如果你還沒有把自己定位好，也無妨</find>
       <find>###</find>
+      <find>服務防禦概論</find>
+      <find>網路架構基礎</find>
+      <find>實體安全</find>
+      <find>img</find>
     </findStrings>
     <replaceStrings>
       <replace>iap record</replace>
       <replace>####</replace>
       <replace>###</replace>
-      <replace>###</replace>
       <replace>#####</replace>
-      <replace>####</replace>
       <replace />
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/../../new_ishare/um/</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/img</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -157,6 +185,9 @@
     <option name="width" value="1280" />
     <option name="height" value="773" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -184,6 +215,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DADA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DADA" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -196,11 +241,11 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -311,7 +356,7 @@
       <workItem from="1493554519912" duration="208000" />
       <workItem from="1493554801903" duration="623000" />
       <workItem from="1493555541051" duration="4515000" />
-      <workItem from="1497068280141" duration="1949000" />
+      <workItem from="1497068280141" duration="4854000" />
     </task>
     <task id="LOCAL-00001" summary="1.修正格式與路徑:&#10;基本知識與TDOH技能樹,&#10;2.將TDOH技能樹檔案改成英文">
       <created>1493559632286</created>
@@ -324,7 +369,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7295000" />
+    <option name="totallyTimeSpent" value="10200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -337,6 +382,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -347,7 +393,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -460,19 +505,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/anti-monitoring.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="189">
-            <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic_knowledge.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -545,7 +577,35 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="336">
-            <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+            <caret line="67" column="29" lean-forward="false" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anti-monitoring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="228">
+            <caret line="404" column="2" lean-forward="false" selection-start-line="404" selection-start-column="2" selection-end-line="404" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_analysis.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -558,8 +618,8 @@
     <entry file="file://$PROJECT_DIR$/host_defense_practice.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="565">
-            <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <first_editor relative-caret-position="445">
+            <caret line="551" column="0" lean-forward="true" selection-start-line="551" selection-start-column="0" selection-end-line="551" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
