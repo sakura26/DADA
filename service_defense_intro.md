@@ -1,5 +1,5 @@
 # 服務防禦概論
-<ul class="comment"><li>這邊要拉出來！超過1.5hr了！</li></ul class="comment">
+>這邊要拉出來！超過1.5hr了！
 
 ## Service強化法則
 

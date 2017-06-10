@@ -15,7 +15,7 @@ Bonus:
 *   防火牆介紹與設置
 *   網路竊聽簡介
 
-*   沒時間講ＱＱ
+>   沒時間講ＱＱ
 
 ## 必修
 
@@ -23,7 +23,7 @@ Bonus:
 
 請能**回答出什麼是：OSI Layer 7、TCP/IP、ARP、路由、交換器、伺服器**
 
-[建議自學方向](https://realdefense.hackpad.com/MRy34vXQV5Q#:h=%E5%BB%BA%E8%AD%B0%E8%87%AA%E5%AD%B8%E6%96%B9%E5%90%91)
+[建議自學方向]()(待補,原連結指向自己)
 
 _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做不好資安的，請不吝跟大家分享想法_
 
@@ -70,134 +70,144 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *   Internet
 
-*   廣域網路
+>   廣域網路
 
 *   Intranet
 
-*   提供內部服務的私有網路，如DMZ
-*   [](https://en.wikipedia.org/wiki/Intranet)https://en.wikipedia.org/wiki/Intranet
+>   提供內部服務的私有網路，如DMZ
+   [](https://en.wikipedia.org/wiki/Intranet)https://en.wikipedia.org/wiki/Intranet
 
 *   Extranet
 
-*   協力廠商提供外部服務的網段  EX:B2B
+>   協力廠商提供外部服務的網段  EX:B2B
 
 *   骨幹網路
 
-*   連接不同網段的快速交換層
-*   在這個區域一般來說只做路由，也不會擺放服務，當成高速公路就是了
+>   連接不同網段的快速交換層
+<BR>   在這個區域一般來說只做路由，也不會擺放服務，當成高速公路就是了
 
 *   Office
+>Backoffice Network 會比較正確
+<BR>總歸就是公司內部使用者的地方，一般不會有對外服務在
 
 *   DMZ
 
-*   一般來說是擺放對內部/外部服務的所在網段，也常常是機房的代稱
+>   一般來說是擺放對內部/外部服務的所在網段，也常常是機房的代稱
 
 *   Server farm
 
-*   一般是不提供公開服務的Server網段，也常常是機房的代稱
+>   一般是不提供公開服務的Server網段，也常常是機房的代稱
 
 ### 常見網路設備
 
 *   路由器
 *   核心交換器
 
-*   基本上很多核心交換器跟路由器都是一體的...（可愛的UTM時代～～笑）
+>   基本上很多核心交換器跟路由器都是一體的...（可愛的UTM時代～～笑）
 
 *   交換器
 
-*   可能多解釋這類別的通常是 L3 Switch 居多
+>   可能多解釋這類別的通常是 L3 Switch 居多
 
 *   VPN
 
-*   透過加密通道把Ａ點網路跟Ｂ點連在一起，兩種模式：
-*   使用者從外部撥接回內部
-*   將Ａ地與Ｂ地的網路連接在一起
+>   透過加密通道把Ａ點網路跟Ｂ點連在一起，兩種模式：
+<BR>   使用者從外部撥接回內部
+ <BR>  將Ａ地與Ｂ地的網路連接在一起
 
 *   無線網路
 
-*   難纏但是又不能不用的東西
-*   優點：設定一次到處都可以用、不用拉線
-*   缺點：效能、干擾、溢波、破解難度低、偽基站
-*   詳細會在無線網路安全中討論
+>   難纏但是又不能不用的東西
+<BR>   優點：設定一次到處都可以用、不用拉線
+<BR>   缺點：效能、干擾、溢波、破解難度低、偽基站
+<BR>   詳細會在無線網路安全中討論
 
 *   SDN
-
+>Software Defined Network 已經越來越多了...這可能是一個後面可以討論到的話題，基本上虛擬環境的資安也會是一個topic
 ### 常見資安設備
 
 這裡是這堂課主要要傳遞的東西
 
 *   邊界防火牆
 
-*   一個網路流量管制裝置，也可以做流量紀錄，一般來說控管Layer 3-4層
-*   一般放在組織網路的對外閘道上，如對Internet、對Extranet中間擺放的防火牆都是
+>   一個網路流量管制裝置，也可以做流量紀錄，一般來說控管Layer 3-4層
+<BR>   一般放在組織網路的對外閘道上，如對Internet、對Extranet中間擺放的防火牆都是
 
 *   防火牆
 
-*   一個網路流量管制裝置，也可以做流量紀錄，一般來說控管Layer 3-4層
-*   放置在內部網段間的防火牆，或是主機本身內建的防火牆
+>   一個網路流量管制裝置，也可以做流量紀錄，一般來說控管Layer 3-4層
+<BR>    放置在內部網段間的防火牆，或是主機本身內建的防火牆
 
 *   入侵偵測系統（IDS/IDP）
 
-*   透過對網路流量的封包檢查來判斷是不是有潛在的攻擊存在，可以去玩玩snort
+>   透過對網路流量的封包檢查來判斷是不是有潛在的攻擊存在，可以去玩玩snort
 
 *   WAF
 
-*   專門對於Web應用而生的入侵偵測系統，可以做到更深度的檢查與判斷，(Web application firewall)
-*   其中一個打WAF的方法就是傳送大量封包
-*   很多資安設備是按照流量賣錢的，當流量超過的時候，總不好給你斷線吧，所以就通通給他pass囉
+>   專門對於Web應用而生的入侵偵測系統，可以做到更深度的檢查與判斷，(Web application firewall)
+<BR><BR>     其中一個打WAF的方法就是傳送大量封包
+<BR><BR>    很多資安設備是按照流量賣錢的，當流量超過的時候，總不好給你斷線吧，所以就通通給他pass囉
 
 *   DB Auditing
 
-*   稽核所有對資料庫的操作，一般也會有對數據作保護、操作保護等額外功能
+>   稽核所有對資料庫的操作，一般也會有對數據作保護、操作保護等額外功能
 
 *   Tripwire
 
-*   安裝於主機，針對檔案是否被更動置換提出警報，常用在避免網頁被置換，或是重要檔案不被修改
-*   感謝GD大大糾正，不是Trapwire QQ
+>   安裝於主機，針對檔案是否被更動置換提出警報，常用在避免網頁被置換，或是重要檔案不被修改
+<BR>    感謝GD大大糾正，不是Trapwire QQ
 
 *   DLP
 
-*   資料外洩保護(可做content aware)，大致上分為網路/主機型
-*   網路型：偵測網路流量中有沒有符合機敏資料定義的傳輸，並發出告警或攔截
-*   主機型：安裝於主機上，藉由攔截OS核心來得知誰、用什麼程式、讀取什麼檔案、做了什麼
+>   資料外洩保護(可做content aware)，大致上分為網路/主機型
+<BR> <BR>    網路型：偵測網路流量中有沒有符合機敏資料定義的傳輸，並發出告警或攔截
+<BR>    主機型：安裝於主機上，藉由攔截OS核心來得知誰、用什麼程式、讀取什麼檔案、做了什麼
 
 *   Anti-Virus
 
-*   防毒軟體，透過病毒碼來偵測檔案是否含有病毒
-*   很多防毒軟體也包含sandbox來協助偵測檔案是否含有未知病毒，藉由分析軟體行為來判斷是否異常，但這邊也有很多問題在...
+>   防毒軟體，透過病毒碼來偵測檔案是否含有病毒
+<BR>    很多防毒軟體也包含sandbox來協助偵測檔案是否含有未知病毒，藉由分析軟體行為來判斷是否異常，但這邊也有很多問題在...
 
 *   Web Filter
 
-*   這是用來針對一般使用者的網路瀏覽行為進行稽核與監控的系統，例如要限制使用者不可以上班時段瀏覽娛樂網站之類 <s>秋後算賬</s>
+>   這是用來針對一般使用者的網路瀏覽行為進行稽核與監控的系統，例如要限制使用者不可以上班時段瀏覽娛樂網站之類 <s>秋後算賬</s>
 
 *   Proxy / Transparent proxy
 
+>用來代理用戶對網站進行存取的服務
+<BR>後者則是偷偷幫你代理不讓你知道，常常讓使用者覺得困擾（？）
+
 *   Reverse Proxy
+>反過來，代理一個網域提供服務給外界使用者
+ <BR>常用在負載平衡、SSL加密之類上
 
 *   Packet Recorder
 
-*   用來記錄封包做之後的分析使用，大多數都是用在除錯、鑑識上面
-*   簡單從Wireshark到複雜如Niksun都有，但核心就是封包側錄
+>   用來記錄封包做之後的分析使用，大多數都是用在除錯、鑑識上面
+<BR>   簡單從Wireshark到複雜如Niksun都有，但核心就是封包側錄
 
 *   UTM
+>Unified Threat Management 整合多種資安設備於單一裝置上，優點是...價格便宜，功能多 缺點是...
+ <BR>CPU loading過高的時候會直接pass所有封包
+ <BR>快樂的呵呵呵呵時代
 
 *   APT
 
-*   事實上我並不喜歡這個命名... APT原名為進階持續性攻擊，指的是一種駭客的攻擊模式，這個模式乃是由駭客對一個組織的深入瞭解與持續滲透，藉由很多難以發掘的細微行動長期佔領組織內部。這基本上可以稱為是駭客等級的間諜行動。
-*   [](https://zh.wikipedia.org/wiki/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81)https://zh.wikipedia.org/wiki/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81
-*   而市面上的APT設備一般來說都只做判別未知的惡意程式，而且一般都專注在郵件系統上，但實際上社交工程郵件只是APT攻擊中的其中一種手法，更不用說判斷能力有限。（貴一點的防毒軟體XD）
-*   經典的APT設備使用Sandbox進行惡意程式分析，藉由一組預設或客製化的虛擬環境來執行未知程式，並分析其行為。所以他也有沙箱所有的弱點
-*   另一種分析手法乃是藉由拆解檔案中是否含有可執行的二進制編碼，這個的判斷方式還滿強的，不過我沒用過
-*   有興趣的話，APT可以另外開一門專門的課程來討論
+>   事實上我並不喜歡這個命名... APT原名為進階持續性攻擊，指的是一種駭客的攻擊模式，這個模式乃是由駭客對一個組織的深入瞭解與持續滲透，藉由很多難以發掘的細微行動長期佔領組織內部。這基本上可以稱為是駭客等級的間諜行動。
+   [](https://zh.wikipedia.org/wiki/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81)https://zh.wikipedia.org/wiki/%E9%AB%98%E7%BA%A7%E9%95%BF%E6%9C%9F%E5%A8%81%E8%83%81
+<BR>   而市面上的APT設備一般來說都只做判別未知的惡意程式，而且一般都專注在郵件系統上，但實際上社交工程郵件只是APT攻擊中的其中一種手法，更不用說判斷能力有限。（貴一點的防毒軟體XD）
+<BR>   經典的APT設備使用Sandbox進行惡意程式分析，藉由一組預設或客製化的虛擬環境來執行未知程式，並分析其行為。所以他也有沙箱所有的弱點
+<BR>   另一種分析手法乃是藉由拆解檔案中是否含有可執行的二進制編碼，這個的判斷方式還滿強的，不過我沒用過
+<BR>   有興趣的話，APT可以另外開一門專門的課程來討論
 
 *   沙箱
 
-*   用在建立一個模擬環境，用來執行不可信任的程式而不會傷害到正式環境，並可對其進行觀察與記錄
-*   問題點：
-*   ＊惡意程式會執行，沙箱如果可以被繞過，該設備可能會被攻下成為最大的弱點。（命中率100%!）
-*   ＊沙箱環境可以被偵測與識別，所以惡意程式可以不執行惡意行為，不被抓出
-*   ＊沙箱環境可能與實際環境不同，惡意程式可能在沙箱中無效，但是在實際使用者環境則會爆發
-*   Virustotal.com
+>   用在建立一個模擬環境，用來執行不可信任的程式而不會傷害到正式環境，並可對其進行觀察與記錄
+  <BR> 問題點：
+   <BR>＊惡意程式會執行，沙箱如果可以被繞過，該設備可能會被攻下成為最大的弱點。（命中率100%!）
+   <BR>＊沙箱環境可以被偵測與識別，所以惡意程式可以不執行惡意行為，不被抓出
+   <BR>＊沙箱環境可能與實際環境不同，惡意程式可能在沙箱中無效，但是在實際使用者環境則會爆發
+   <BR><BR>Virustotal.com
 
 ### 常見服務
 
@@ -211,25 +221,25 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   AD
 *   辦公設備
 
-*   列不完的啦，自己去看鳥哥的網站 [](http://linux.vbird.org/)http://linux.vbird.org/
+>   列不完的啦，自己去看鳥哥的網站 [](http://linux.vbird.org/)http://linux.vbird.org/
 
 ### 高風險目標
 
-*   每個組織都不一樣，請務必先了解組織特性來羅列高風險目標
+>   每個組織都不一樣，請務必先了解組織特性來羅列高風險目標
 
 *   AD
 *   防毒主機
 *   資產管理主機
 *   內部更新伺服器
 
-*   以上是Checkmate等級的目標
+>   以上是Checkmate等級的目標
 
 *   資安設備
 *   網路設備 
 *   經手或儲存高價值資料的主機
 *   核心業務主機
 
-*   以上是會讓網管很痛苦的目標
+>   以上是會讓網管很痛苦的目標
 
 ### 接手一個網路，你會想要搞清楚
 
@@ -254,7 +264,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *    取得內部領地
 
-         *   直接攻擊對外服務並取得權限
+     *   直接攻擊對外服務並取得權限
      *   透過社交工程直接進入內部網路
      *   透過攻下友軍網路，並透過配置不良的Extranet進入內部網路
 
@@ -303,19 +313,23 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   accept any any
 *   cisco cisco
 
-*   是說所有東西都同一品牌的問題嗎？
-*   預設密碼
+>Q:   是說所有東西都同一品牌的問題嗎？
+<BR><BR>A:   預設密碼
 
-*   曼陀珠
+   曼陀珠
 
-*   到處是洞的概念？ 
-*   皮脆、心軟、真好嚼
+>   到處是洞的概念？ 
+<BR>   皮脆、心軟、真好嚼
 
 *   免費的最貴
+>掉路邊的隨身碟啊
+ <BR>中國來的便宜好棒棒路由器
+ <BR>史上最大銀行竊案，孟加拉央行損失逾 20 億 
+ <BR>使用廉價路由器讓銀行損失8000萬美元  https://read01.com/xAJ3Mk.html
 
 ### 實體隔離
 
-*   使用專用的網段放置資安設備
+>   使用專用的網段放置資安設備
 
 實體隔離代表，該網段*絕對不能*與外部連接，包含其他電腦。如果中間有跳板電腦，那就不能被稱為實體隔離
 
@@ -329,8 +343,8 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 網路知識是一切的基礎，而CCNA裡面包含了大多數你所需要知道的東西，可以作為不錯的教材
 
-*   CCNA學到一半，你就可以使用很多Hacks了，我會覺得這個學習ＣＰ值相當高
-*   不一定要考證照，證照不過是張紙，怎麼應用才是重點
+>   CCNA學到一半，你就可以使用很多Hacks了，我會覺得這個學習ＣＰ值相當高
+<BR>   不一定要考證照，證照不過是張紙，怎麼應用才是重點
 
 ### 架個服務、機房或管個網路
 
@@ -340,8 +354,8 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 不要猜，直接去看封包
 
-*   不熟封包結構？請查Wiki
-*   Wireshark超好用，你可以tcpdump下來之後用wireshark看
+>   不熟封包結構？請查Wiki
+<BR>   Wireshark超好用，你可以tcpdump下來之後用wireshark看
 
 ## 網路成長記錄
 
@@ -363,8 +377,8 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 開始出現各種奇怪的問題跟需求，開始購置如NAS之類的內部服務裝置開始做資料儲存與協作，不過裡面基本上都還是一坨
 
-*   這時候大家的最愛就是 Teamviewer，也是一個蠻可怕的弱點
-*   還有...NAS通常就是無保護的放在DMZ開給大家玩
+>   這時候大家的最愛就是 Teamviewer，也是一個蠻可怕的弱點
+<BR>   還有...NAS通常就是無保護的放在DMZ開給大家玩
 
 優勢：扁平化，成本最低，幾乎無遠程弱點
 
@@ -406,8 +420,8 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *   流量可被預測與控制
 
-*   很少人這樣做吧...觀念是正確的，但是QoS鮮少被執行...
-*   能預測但不一定真的會被實作啊（遠目
+>   很少人這樣做吧...觀念是正確的，但是QoS鮮少被執行...
+<BR><BR>   能預測但不一定真的會被實作啊（遠目
 
 *   網路穩定度提升
 *   管理複雜度降低
@@ -461,23 +475,23 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   非常高的建置與維護成本
 *   需要真正的專家
 
-*   **Lv.??：巫師**
-*   沒有很大，看起來也沒有很炫砲，但是踏進這個領域，請做好心裏準備
-*   這裡有陷阱、有魔法，也有神秘的裝置
-*   永遠不知道有沒有人正在盯著你看，使用跳板也不一定真的能偽裝什麼
-*   我期待能看到這樣的存在
+>   **Lv.??：巫師**
+<BR>   沒有很大，看起來也沒有很炫砲，但是踏進這個領域，請做好心裏準備
+<BR>   這裡有陷阱、有魔法，也有神秘的裝置
+<BR>   永遠不知道有沒有人正在盯著你看，使用跳板也不一定真的能偽裝什麼
+<BR>   我期待能看到這樣的存在
 
 ## 進階
 
 估計時間大概不太夠了... 放到網路架構進階去
 
-*   爆炸時，怎麼讓受害範圍縮減在特定區塊？
-*   創造出「看不見的區域」是有可能的嗎？
-*   製造陷阱
-*   如何在對方進入你創造的世界時，一舉一動都被你所監視？
-*   防火牆的區域聯防
-*   "你的設備真的安全嗎....?"
-*   攻性防壁 是有可能的？
+>   爆炸時，怎麼讓受害範圍縮減在特定區塊？
+<BR>   創造出「看不見的區域」是有可能的嗎？
+<BR>   製造陷阱
+<BR>   如何在對方進入你創造的世界時，一舉一動都被你所監視？
+<BR>   防火牆的區域聯防
+<BR>   "你的設備真的安全嗎....?"
+<BR>   攻性防壁 是有可能的？
 
 **消失的密室：一個無法被感知的監聽網路**
 
@@ -520,21 +534,26 @@ attack by specific application
 
 *   Cable: Vampire tap [](http://pluto.ksi.edu/~cyh/cis370/ebook/ch02b.htm)http://pluto.ksi.edu/~cyh/cis370/ebook/ch02b.htm
 
-[](http://www.certiguide.com/apfr/diagrams/figure422.png)http://www.certiguide.com/apfr/diagrams/figure422.png
+![](img/tap1.png)
 
 *   光纖: [](https://en.wikipedia.org/wiki/Fiber_tapping)https://en.wikipedia.org/wiki/Fiber_tapping
+![](img/fiber_tap.jpg)
 
-[](http://cdn.ttgtmedia.com/informationsecurity/images/vol2iss11/ism_vol2iss11_f4-fiberhack.jpg)http://cdn.ttgtmedia.com/informationsecurity/images/vol2iss11/ism_vol2iss11_f4-fiberhack.jpg
 
 [](http://andrewmallett.net/tech/networks/pinouts.gif)http://andrewmallett.net/tech/networks/pinouts.gif
 
+*   RJ45: 
+       *   被動式Tap
+>限制：10/100的網路
+
+![](img/rj45.gif)
 * 1000 並沒有明確區分輸入輸出腳位，所以沒有辦法做被動式的tapping
 * 實作Passive RJ45 Tap
 * [](http://www.instructables.com/id/Make-a-Passive-Network-Tap/?ALLSTEPS)http://www.instructables.com/id/Make-a-Passive-Network-Tap/?ALLSTEPS
 * [](http://www.fragmentationneeded.net/2012/01/ethernet-taps-dont-get-me-started.html)http://www.fragmentationneeded.net/2012/01/ethernet-taps-dont-get-me-started.html
 
 * ![](img/network_intro_7.png)
-  </ul class="comment">
+
 
 * [](http://2.bp.blogspot.com/-mXuaUa65yTo/VA45KtqXSXI/AAAAAAAAEjs/ch9-CaNcw0g/s1600/Network%2BTap.jpg)http://2.bp.blogspot.com/-mXuaUa65yTo/VA45KtqXSXI/AAAAAAAAEjs/ch9-CaNcw0g/s1600/Network%2BTap.jpg
 
@@ -542,7 +561,7 @@ attack by specific application
 
 #### 封包重組
 
-*   mergepcap -a 1.pcap 2.pcap -w result.pcap
+       mergepcap -a 1.pcap 2.pcap -w result.pcap
 
 或直接於Wireshark： File -> Merge
 
@@ -556,13 +575,13 @@ attack by specific application
 
 [](https://nmap.org/nsedoc/scripts/sniffer-detect.html)https://nmap.org/nsedoc/scripts/sniffer-detect.html
 
-*   nmap -sV --script=sniffer-detect <target>
+       nmap -sV --script=sniffer-detect <target>
 
-*   大夥，竊聽不難，流量要記得加密啊....
+>   大夥，竊聽不難，流量要記得加密啊....
 
 ## 延伸講義：防火牆與防火牆規則
 
-*   大概來不及講...拆成獨立章節？
+>   大概來不及講...拆成獨立章節？
 
 問：有沒有用過防火牆的？
 
@@ -574,8 +593,8 @@ attack by specific application
 
 特別一點的，可以處理Layer 2，或Layer 5-7的內容
 
-*   iptables
-*   ebtables
+>   iptables
+<br>   ebtables
 
 #### 先釐清
 
@@ -613,7 +632,7 @@ attack by specific application
 
 功能 v.s. 效能、安全性、穩定性
 
-*   防火牆就是防火牆，別亂塞東西！
+>   防火牆就是防火牆，別亂塞東西！
 
 特殊功能：多WAN、解SSL、IDS、WebFilter、WAF、DLP、APT、Anti-Virus.....你想得到他她都能塞進去
 
@@ -625,22 +644,22 @@ attack by specific application
 
 # 預設原則
 
-*   iptables -P OUTPUT ACCEPT      # 可以的話，連對外都不要預設accept
-*   iptables -P INPUT DROP
-    **   # 過濾不正常流量（基本偽裝防護）
-*   iptables -F
-*   iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
-*   iptables -A INPUT -p tcp ! --syn -m state --state NEW -j DROP
-*   iptables -A INPUT -p tcp --tcp-flags ALL ALL -j DROP
-    **   # 開放本地流量
-*   iptables -A INPUT -i lo -j ACCEPT
-    **   # 開放公開服務 （封包過濾）
-*   iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
-*   iptables -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
-    **   # 指定範圍開放服務
-*   iptables -A INPUT -p tcp -s YOUR_IP_ADDRESS -m tcp --dport 22 -j ACCEPT
-    **   # 允許已被認可的TCP流量通過 （狀態感知）
-*   iptables -I INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+       iptables -P OUTPUT ACCEPT      # 可以的話，連對外都不要預設accept
+       iptables -P INPUT DROP
+       # 過濾不正常流量（基本偽裝防護）
+       iptables -F
+       iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
+       iptables -A INPUT -p tcp ! --syn -m state --state NEW -j DROP
+       iptables -A INPUT -p tcp --tcp-flags ALL ALL -j DROP
+       # 開放本地流量
+       iptables -A INPUT -i lo -j ACCEPT
+       # 開放公開服務 （封包過濾）
+       iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+       iptables -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+       # 指定範圍開放服務
+       iptables -A INPUT -p tcp -s YOUR_IP_ADDRESS -m tcp --dport 22 -j ACCEPT
+       # 允許已被認可的TCP流量通過 （狀態感知）
+       iptables -I INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 ![](img/network_intro_9.png)
 
