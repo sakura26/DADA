@@ -39,8 +39,8 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   Embedded system
 *   Mobile Device
 
-*   當然，ATM也是
-*   [](https://www.youtube.com/watch?v=HmS5Bp3OrRg)https://www.youtube.com/watch?v=HmS5Bp3OrRg
+    *   當然，ATM也是
+    *   [](https://www.youtube.com/watch?v=HmS5Bp3OrRg)https://www.youtube.com/watch?v=HmS5Bp3OrRg
 
 ## 主要分層
 
@@ -55,10 +55,10 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 提一下以前被老爸玩的趣事，然後鼓勵大家這樣去玩自己的小孩（喂
 
-*   如果你對硬體不太熟悉，可以試著google一下自行組裝桌上型電腦的教學
-*   [](https://isite.tw/2015/03/07/13023)https://isite.tw/2015/03/07/13023
-*   [](https://isite.tw/2015/03/09/13021)https://isite.tw/2015/03/09/13021
-*   [](https://isite.tw/2015/03/01/404)https://isite.tw/2015/03/01/404
+>   如果你對硬體不太熟悉，可以試著google一下自行組裝桌上型電腦的教學
+>   [](https://isite.tw/2015/03/07/13023)https://isite.tw/2015/03/07/13023<BR>
+>   [](https://isite.tw/2015/03/09/13021)https://isite.tw/2015/03/09/13021<BR>
+>   [](https://isite.tw/2015/03/01/404)https://isite.tw/2015/03/01/404
 
 ### 遠程控制
 
@@ -105,13 +105,13 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   Unix-Like
 
      *   Linux
-*   BSD
+     *   BSD
      *   Solaris
 
 *   Mobile
 
      *   iOS
-*   Android
+     *   Android
 
 *   Other
 
@@ -131,9 +131,9 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 ### Runtime
 
 * Strtus2 OGNL表達式搭配過濾不當導致各種各樣的遠程命令執行弱點
-  * [](http://rickgray.me/2016/05/06/review-struts2-remote-command-execution-vulnerabilities.html)http://rickgray.me/2016/05/06/review-struts2-remote-command-execution-vulnerabilities.html
+  > [](http://rickgray.me/2016/05/06/review-struts2-remote-command-execution-vulnerabilities.html)http://rickgray.me/2016/05/06/review-struts2-remote-command-execution-vulnerabilities.html
 * Java7導入動態語言轉型時，安全防禦架構破損產生大量嚴重弱點
-  * [](http://www.ithome.com.tw/node/79034)http://www.ithome.com.tw/node/79034
+  > [](http://www.ithome.com.tw/node/79034)http://www.ithome.com.tw/node/79034
 * Laravel [](https://www.exploit-db.com/exploits/39318/)https://www.exploit-db.com/exploits/39318/
 * Rails RCE [](https://www.exploit-db.com/exploits/40086/)https://www.exploit-db.com/exploits/40086/
 * Bash ShellShock [](http://devco.re/blog/2014/09/30/shellshock-CVE-2014-6271/)http://devco.re/blog/2014/09/30/shellshock-CVE-2014-6271/
@@ -146,7 +146,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 * Apache2 [](https://www.cvedetails.com/vulnerability-list/vendor_id-45/Apache.html)https://www.cvedetails.com/vulnerability-list/vendor_id-45/Apache.html
 * ElasticSearch [](https://www.elastic.co/community/security)https://www.elastic.co/community/security
-  * CVE-2014-3120 dynamic scripting, which allows remote attackers to execute arbitrary MVEL expressions and Java code
+  > CVE-2014-3120 dynamic scripting, which allows remote attackers to execute arbitrary MVEL expressions and Java code
 
 ## 安全
 
@@ -164,11 +164,11 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *    病毒
 
-         *   老方法與社交工程
+        *   老方法與社交工程
 
 *    蠕蟲
 
-     *   紅色警戒
+        *   紅色警戒
 
 *    駭客手打
 
@@ -195,8 +195,13 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   熟悉你的系統！
 *   弱點更新
 
-     *   選擇有更新維護的作業系統與平台
-*   訂閱安全性更新通知
+       *   選擇有更新維護的作業系統與平台
+       *   訂閱安全性更新通知
 
+*   主機堡壘化
+    *   Simple is better
+    *   最小權限原則
+    *   留意所有的進入點（尤其是管理介面）
+    > 防禦實務會談更多
 *   正式系統應關閉所有測試與除錯資訊，移除所有不應該出現的檔案
 *   Log要看
