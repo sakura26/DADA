@@ -535,8 +535,9 @@ attack by specific application
 *   Cable: Vampire tap [](http://pluto.ksi.edu/~cyh/cis370/ebook/ch02b.htm)http://pluto.ksi.edu/~cyh/cis370/ebook/ch02b.htm
 
 ![](img/tap1.png)
-
+<BR>
 *   光纖: [](https://en.wikipedia.org/wiki/Fiber_tapping)https://en.wikipedia.org/wiki/Fiber_tapping
+<BR>
 ![](img/fiber_tap.jpg)
 
 

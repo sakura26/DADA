@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0264766b-e38a-4dd9-863a-10e32c17d828" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fiber_tap.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rj45.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tap1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network_defense_intro.md" afterPath="$PROJECT_DIR$/network_defense_intro.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service_defense_intro.md" afterPath="$PROJECT_DIR$/service_defense_intro.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,12 +17,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="382">
-                <caret line="79" column="5" lean-forward="false" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="11" />
+              <first_editor relative-caret-position="502">
+                <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -42,8 +37,8 @@
         <entry file="file://$PROJECT_DIR$/network_defense_advance.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="373">
+                <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -54,12 +49,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="network_defense_intro.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="network_defense_intro.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/network_defense_intro.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="284">
-                <caret line="512" column="0" lean-forward="true" selection-start-line="512" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="287">
+                <caret line="540" column="22" lean-forward="true" selection-start-line="540" selection-start-column="22" selection-end-line="540" selection-end-column="22" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -368,7 +363,7 @@
       <workItem from="1493554519912" duration="208000" />
       <workItem from="1493554801903" duration="623000" />
       <workItem from="1493555541051" duration="4515000" />
-      <workItem from="1497068280141" duration="6770000" />
+      <workItem from="1497068280141" duration="7073000" />
     </task>
     <task id="LOCAL-00001" summary="1.修正格式與路徑:&#10;基本知識與TDOH技能樹,&#10;2.將TDOH技能樹檔案改成英文">
       <created>1493559632286</created>
@@ -381,7 +376,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12116000" />
+    <option name="totallyTimeSpent" value="12419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -641,11 +636,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network_defense_intro.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="284">
-            <caret line="512" column="0" lean-forward="true" selection-start-line="512" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="502">
+            <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -658,8 +653,8 @@
     <entry file="file://$PROJECT_DIR$/network_defense_advance.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="373">
+            <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
             <folding />
           </first_editor>
           <second_editor />
@@ -669,11 +664,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/network_defense_intro.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="382">
-            <caret line="79" column="5" lean-forward="false" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="11" />
+          <first_editor relative-caret-position="287">
+            <caret line="540" column="22" lean-forward="true" selection-start-line="540" selection-start-column="22" selection-end-line="540" selection-end-column="22" />
             <folding />
           </first_editor>
           <second_editor />
