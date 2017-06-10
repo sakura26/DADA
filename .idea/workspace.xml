@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0264766b-e38a-4dd9-863a-10e32c17d828" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network_defense_intro.md" afterPath="$PROJECT_DIR$/network_defense_intro.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/app_security.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/damn_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/shellshock_test_git.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_php_defense.md" afterPath="$PROJECT_DIR$/dev_php_defense.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +25,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="502">
-                <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <first_editor relative-caret-position="222">
+                <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -49,12 +53,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="network_defense_intro.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="network_defense_intro.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network_defense_intro.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="287">
-                <caret line="540" column="22" lean-forward="true" selection-start-line="540" selection-start-column="22" selection-end-line="540" selection-end-column="22" />
+              <first_editor relative-caret-position="360">
+                <caret line="541" column="0" lean-forward="true" selection-start-line="541" selection-start-column="0" selection-end-line="541" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -81,12 +85,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TDOH_skilltree.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDOH_skilltree.md">
+      <file leaf-file-name="dev_php_defense.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dev_php_defense.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="476">
-                <caret line="225" column="30" lean-forward="false" selection-start-line="225" selection-start-column="30" selection-end-line="225" selection-end-column="30" />
+              <first_editor relative-caret-position="331">
+                <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -139,7 +143,13 @@
       <find>服務防禦概論</find>
       <find>網路架構基礎</find>
       <find>實體安全</find>
+      <find>職業</find>
       <find>img</find>
+      <find>h</find>
+      <find>hack</find>
+      <find>hackp</find>
+      <find>hackpa</find>
+      <find>hackpad</find>
     </findStrings>
     <replaceStrings>
       <replace>iap record</replace>
@@ -174,6 +184,7 @@
         <option value="$PROJECT_DIR$/host_defense_practice.md" />
         <option value="$PROJECT_DIR$/service_defense_intro.md" />
         <option value="$PROJECT_DIR$/network_defense_intro.md" />
+        <option value="$PROJECT_DIR$/dev_php_defense.md" />
       </list>
     </option>
   </component>
@@ -363,7 +374,7 @@
       <workItem from="1493554519912" duration="208000" />
       <workItem from="1493554801903" duration="623000" />
       <workItem from="1493555541051" duration="4515000" />
-      <workItem from="1497068280141" duration="7073000" />
+      <workItem from="1497068280141" duration="7639000" />
     </task>
     <task id="LOCAL-00001" summary="1.修正格式與路徑:&#10;基本知識與TDOH技能樹,&#10;2.將TDOH技能樹檔案改成英文">
       <created>1493559632286</created>
@@ -376,7 +387,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12419000" />
+    <option name="totallyTimeSpent" value="12985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -385,7 +396,7 @@
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2540453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2540453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -544,19 +555,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="432">
             <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TDOH_skilltree.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="476">
-            <caret line="225" column="30" lean-forward="false" selection-start-line="225" selection-start-column="30" selection-end-line="225" selection-end-column="30" />
             <folding />
           </first_editor>
           <second_editor />
@@ -594,20 +592,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log_analysis.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/host_defense_practice.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -636,20 +620,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="502">
-            <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/network_defense_advance.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -667,8 +637,64 @@
     <entry file="file://$PROJECT_DIR$/network_defense_intro.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="287">
-            <caret line="540" column="22" lean-forward="true" selection-start-line="540" selection-start-column="22" selection-end-line="540" selection-end-column="22" />
+          <first_editor relative-caret-position="360">
+            <caret line="541" column="0" lean-forward="true" selection-start-line="541" selection-start-column="0" selection-end-line="541" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="222">
+            <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDOH_skilltree.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="476">
+            <caret line="225" column="30" lean-forward="false" selection-start-line="225" selection-start-column="30" selection-end-line="225" selection-end-column="30" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_analysis.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_php_defense.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="331">
+            <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

