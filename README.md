@@ -92,11 +92,8 @@ Time to take action
 
 *   [Log分析入門](log_analysis_intro.md) - 誰黑了我的主機？！
 *   [Log分析](log_analysis.md)  - 正式開始進入Log分析
-
+*   [Log分析：Ivan分享](log_analysis_ivan.pdf) - Acer前首席分析師的經驗分享
 *   SOC概論 - 資安戰情室
-*   SOC實務 - 資安分析
-*   SOC實務 - 規則、儀表、SOP
-*   SOC實務 - 系統建置
 *   戰情中心 - unleash the true power of SOC
 *   [SysTw分享預訂](log_analysis_systw.md)
 *   [網路威脅情報分析](http://www.ithome.com.tw/news/108022)
