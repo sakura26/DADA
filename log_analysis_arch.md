@@ -1,4 +1,4 @@
-# Log分析
+# Log分析架構
 
 ## 前言
 
@@ -163,7 +163,52 @@ date:2017/03/01 00:00:01 | protocol: tcp | src_ip: 213.32.123.32 | src_port: 80 
 * 逐行檢視
 
 
-## 實戰
+
+## Log格式
+
+關於Log解析，你可能會遇到幾種不同類型的數據風格，不同的風格適合不同的解析方式
+
+### 常見格式
+
+*   固定字元分隔 (like CSV)
+*   固定長度分隔
+*   key-value
+*   JSON
+*   XML
+*   自然語言
+*   混合
+
+### 欄位的常見格式
+
+*    字串
+*    數字
+     *   整數
+     *   浮點數
+     *   科學記號
+     *   0xF
+*    時間
+     *   timestamp / epoch / unix timestamp
+     *   mysql time format
+     *    跨時區分析
+*    ID
+     *   數字遞增
+     *    UID / GUID   18A90565AF7E-552E04EF-007B-5C78-DF19
+     
+
+
+同時也有一些大廠跳出來，試圖制定出統一世界的格式，如
+### CEF
+
+```
+CEF: 0|PATownsend|IBM-QAUDJRN|1.28|1007|CO-Create object|4|msg=CO-Create object act=N-Create of new object actual_type=CO-N jrn_seq=102361 timestamp=20120229154725823000 dproc=ICC suser=MVAGANEK job_number=638012 eff_user=MVAGANEK object=X_BIGNUM object_library=ICAPITST object_type=*MODULE object_attrCLE
+```
+
+
+
+
+## Log解析實戰
+
+不管你使用哪個套件，總會遇到Log格式不支援的問題，一起來試著處理一個奇怪的Log吧
 
 ### iptables Log
 
@@ -204,82 +249,10 @@ Aug  4 13:23:00 centos kernel: IPTables-Dropped: IN=em1 OUT= MAC=a2:be:d2:ab:11:
 
 你會注意到，欄位順序並不保證，同時有些欄位是“可能出現可能不出現”的，這有可能會導致你的程式無法抓到這條log, 或是做出錯誤的動作。這個時候我們就要來談談Log格式了
 
-## Log格式
+嗯，當你學到這裡，你就已經擁有相當程度的產值了，下一階段Log分析進階，除了一些奇技淫巧之外，更重要的是來談談「怎麼樣成為一個專業的分析師」，在各種情況下都能夠具備洞察力，能夠看到真實，給出關鍵性的決策
 
-關於Log解析，你可能會遇到幾種不同類型的數據風格，不同的風格適合不同的解析方式
+不過在此之前，我們必須要熟悉各種不同的數據。我們先來看看網路鑑識與主機鑑識吧
 
-### 常見格式
+## 下一場
 
-*   固定字元分隔
-*   固定長度分隔
-*   key-value
-*   JSON
-*   XML
-*   自然語言
-*   混合
-
-### 欄位的常見格式
-
-*    字串
-*    數字
-     *   整數
-     *   浮點數
-     *   科學記號
-     *   0xF
-*    時間
-     *   timestamp / epoch / unix timestamp
-     *   mysql time format
-     *    跨時區分析
-*    ID
-     *   數字遞增
-     *    UID / GUID   18A90565AF7E-552E04EF-007B-5C78-DF19
-     
-
-
-同時也有一些大廠跳出來，試圖制定出統一世界的格式，如
-### CEF
-
-```
-CEF: 0|PATownsend|IBM-QAUDJRN|1.28|1007|CO-Create object|4|msg=CO-Create object act=N-Create of new object actual_type=CO-N jrn_seq=102361 timestamp=20120229154725823000 dproc=ICC suser=MVAGANEK job_number=638012 eff_user=MVAGANEK object=X_BIGNUM object_library=ICAPITST object_type=*MODULE object_attrCLE
-```
-
-好像寫太多了....剩下的放到下次再提？
-     
-## 弱點與駭客攻擊
-
-
-### 駭客的目標
-
-*   抹除蹤跡
-*   誤導方向
-*   探索內部、搜尋攻擊目標
-*   直接攻擊高權限的管理者
-
-### 攻擊手法與對抗手法
-
-*   篡改內容
-    *   換行字元
-    *   假造欄位資訊
-    *   超長數據覆蓋
-    *   格式破壞
-    *   XSS / SQL injection
-*   刪除檔案
-*   Span
-
-### 權限配置
-
-如前面提到的，駭客對於log的興趣與可以獲得的利益遠比系統管理者還大，所以避免log被隨意讀取是非常重要的事情
-
--rw-r-----  640是常見的配置 
-
-可公開的log才會出現644
-
-進階安全性：append only
-
-*   chattr +a test.log
-
-或SELinux
-
-但，根據對方打得深入程度，本機的安全性遲早會被破的，所以Log的異地備援與即時分析成為了重點
-
-吸血鬼牙
+[Log分析進階](log_analysis_adv.md)
