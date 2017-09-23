@@ -91,7 +91,8 @@ Time to take action
 推薦資安人員、網管、伺服器管理者、開發人員來了解
 
 *   [Log分析入門](log_analysis_intro.md) - 誰黑了我的主機？！
-*   [Log分析](log_analysis.md)  - 正式開始進入Log分析
+*   [Log分析架構](log_analysis_arch.md)  - 正式開始進入Log分析
+*   [Log分析進階](log_analysis_adv.md)  - 思路、法門、攻擊
 *   [Log分析：Ivan分享](log_analysis_ivan.pdf) - Acer前首席分析師的經驗分享
 *   SOC概論 - 資安戰情室
 *   戰情中心 - unleash the true power of SOC
