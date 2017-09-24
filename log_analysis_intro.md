@@ -301,6 +301,42 @@ Log分析大致上有兩個走向
 
 <http://www.netadmin.com.tw/article_content.aspx?sn=1703130003>
 
+感謝阿喵補充，grep事實上可以使用regex的功能來進行Log選擇與切割。
+
+這個範本使用-oP參數，分別代表著“僅輸出選擇的Group”以及“使用perl style regex”
+
+```
+$ echo "foo 'bar'" | grep -Po "(?<=')[^']+(?=')"
+bar
+```
+
+也有這樣的變形用法，無視換行萃取多筆同類型資料
+
+```
+$ echo "aaa 111 bbb 222 ccc 333" | egrep -o "([0-9]+)"
+111
+222
+333
+```
+
+<https://explainshell.com/explain?cmd=echo+%22foo+%27bar%27%22+%7C+grep+-Po+%22%28%3F%3C%3D%27%29%5B%5E%27%5D%2B%28%3F%3D%27%29%22>
+
+另一方面很多時候如果你會遇到中間有不定長度的空格的時候，單純用cut去切會很蛋疼，awk會更加方便
+
+```
+$ cat /tmp/tt
+Sun Apr  2 12:28:51 2017 [pid 2] CONNECT: Client "174.106.37.179"
+Sun Apr 12 12:28:53 2017 pid 1 FAIL LOGIN: Client "174.106.37.179"
+$ cat /tmp/tt | cut -d' ' -f 5 #因為日期的縮排導致空白數量不固定，切錯啦
+12:28:51
+2017
+$ cat /tmp/tt | awk '{print $5}' #正確的取到年
+2017
+2017
+```
+
+<http://ithelp.ithome.com.tw/articles/10021489>
+
 #### vsftpd.log
 
 ``` 

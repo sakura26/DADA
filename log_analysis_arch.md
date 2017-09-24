@@ -123,6 +123,8 @@ date:2017/03/01 00:00:01 | protocol: tcp | src_ip: 213.32.123.32 | src_port: 80 
 
 然後由於自己寫parser是很痛苦的一件事，甚至如ArcSight都以他家agent支援的設備格式為主打，現在也有很多OpenSource試著提供一些內建的parser可以使用，如logstash/fluentd都有內建支援Apache access/error Log
 
+詳細的轉換階段的方法，我們會在下面進一步討論，諸如Regular Expression等技巧
+
 ### 儲存階段
 
 多數情況下，你不可能持續坐在螢幕前面刷那些log，除了看到眼睛脫窗之外只會搞死自己。一般來說Log總還是會儲存起來以備後續分析之用，可能為了證據力還要保留原始紀錄，放個幾年之類的，所以問題就來惹
@@ -164,11 +166,15 @@ date:2017/03/01 00:00:01 | protocol: tcp | src_ip: 213.32.123.32 | src_port: 80 
 
 
 
-## Log格式
+## 轉換階段
 
 關於Log解析，你可能會遇到幾種不同類型的數據風格，不同的風格適合不同的解析方式
 
-### 常見格式
+這是個很有趣的議題，不同數據在不同環境不同需求下有著不同的最佳處理方式。我們不提太多“該怎麼做”，但我試著從比較中立的角度來介紹有哪些特性與哪些方法可用
+
+然後Regular Expression也會做的粗淺的介紹，這是一個強而有力的工具，幾乎所有的Log解析都有機會用上
+
+### Log常見格式
 
 *   固定字元分隔 (like CSV)
 *   固定長度分隔
@@ -195,7 +201,6 @@ date:2017/03/01 00:00:01 | protocol: tcp | src_ip: 213.32.123.32 | src_port: 80 
      *    UID / GUID   18A90565AF7E-552E04EF-007B-5C78-DF19
      
 
-
 同時也有一些大廠跳出來，試圖制定出統一世界的格式，如
 ### CEF
 
@@ -203,10 +208,43 @@ date:2017/03/01 00:00:01 | protocol: tcp | src_ip: 213.32.123.32 | src_port: 80 
 CEF: 0|PATownsend|IBM-QAUDJRN|1.28|1007|CO-Create object|4|msg=CO-Create object act=N-Create of new object actual_type=CO-N jrn_seq=102361 timestamp=20120229154725823000 dproc=ICC suser=MVAGANEK job_number=638012 eff_user=MVAGANEK object=X_BIGNUM object_library=ICAPITST object_type=*MODULE object_attrCLE
 ```
 
+看到了這麼多不同的格式，我該怎麼處理他們呢？
+### 撰寫解析器
 
+有很多的方式來解析Log的文字資訊，但是最常被使用的，大概就是所謂的Regular Expression(Regex)了（中文是很撓口的“正則表示式”）。Regex是個很好玩的東西，我都稱他為“描述語言的語言”。
 
+<https://en.wikipedia.org/wiki/Regular_expression>
 
-## Log解析實戰
+在這邊我不會教大家怎麼學會Regex, 但是我會大概介紹一下為什麼要用它
+
+使用Regex有幾個目的：
+
+* 效能考量
+* 便於理解
+* 精確度
+* 省的寫程式
+
+Regex一路發展以來，事實上並不只有一個統一標準。兩大門派雖然大多數一致但也有一些不同的特性，而最靠北的是每個語言各有各的實作與擴充：
+
+<https://en.wikipedia.org/wiki/Comparison_of_regular_expression_engines#Languages>
+
+一些你會想參考的資源
+
+* 教學
+  * <https://www.javaworld.com.tw/jute/post/view?bid=20&id=130126>
+* 線上測試工具
+  * <http://www.regexplanet.com/>
+
+常見你會使用到Regex的Log解析工具
+
+* LogStash / Flunetd
+* grep / awk / sed
+* ArcSight Agent
+* splunk
+
+當你在使用一個工具的時候，請記得先確認你使用的工具的Regex風格撰寫喔啾咪～
+
+### Log解析實戰
 
 不管你使用哪個套件，總會遇到Log格式不支援的問題，一起來試著處理一個奇怪的Log吧
 
