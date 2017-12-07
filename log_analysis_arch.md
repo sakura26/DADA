@@ -234,6 +234,8 @@ Regex一路發展以來，事實上並不只有一個統一標準。兩大門派
   * <https://www.javaworld.com.tw/jute/post/view?bid=20&id=130126>
 * 線上測試工具
   * <http://www.regexplanet.com/>
+* 離線撰寫輔助
+  * <https://ez3c.tw/5874#.WcchH6GGAEE.facebook>
 
 常見你會使用到Regex的Log解析工具
 
