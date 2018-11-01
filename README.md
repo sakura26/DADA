@@ -54,6 +54,7 @@ Time to take action
 *   [資訊安全概論](intro.md)
 為什麼要做資安？我們為何而來？我們帶來什麼？為什麼非我們不可？
 *   如果你真的想走這一行，你會希望擁有的[基礎知識](basic_knowledge.md) 
+*   [常見資安弱點](basic_common_vuln.md)
 *   [職業技能樹](TDOH_skilltree.md) －怎麼進入資安這一行？
 
 
