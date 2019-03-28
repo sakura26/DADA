@@ -110,6 +110,7 @@ Time to take action
 *   主機鑑識 - Be a CSI
     *   [找網馬](https://drive.google.com/file/d/0B3F5ZsA91Z-pSVVyRTdjNFl6OHM/view)
     * [Google Chrome擴充套件後門解析](https://slides.com/sakura26/plugin-backdoor-analysis)
+    * [Windows鑑識](forensic_windows.md)
 *   網路鑑識
 *   <s>手機鑑識</s>
 *   資料復原
