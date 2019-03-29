@@ -141,7 +141,7 @@ Time to take action
 *   [監控](monitoring.md) - 當一個人能隨時了解你的過去、現在的一切，甚至能操控你的未來...這是現在進行式
 *   [反監控](anti-monitoring.md)  - 續上，身為一個普通人/駭客，我們怎麼對抗？
 *   [反反監控](anti-anti-monitoring.md) - 再續上，身為網管，我該怎麼面對這些躲避措施？
-*   [給人權工作者的自保指南](NGO_selfdefense.md) - 第一線的鬥士，身無寸甲卻要面對巨型企業與政府，這是你們該知道的....
+*   [給人權工作者的自保指南](https://slides.com/sakura26/general-information-security-defense-for-ngo) - 第一線的鬥士，身無寸甲卻要面對巨型企業與政府，這是你們該知道的....
 
 ### 開發者面向
 
