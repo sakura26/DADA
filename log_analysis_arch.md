@@ -205,7 +205,7 @@ date:2017/03/01 00:00:01 | protocol: tcp | src_ip: 213.32.123.32 | src_port: 80 
 ### CEF
 
 ```
-CEF: 0|PATownsend|IBM-QAUDJRN|1.28|1007|CO-Create object|4|msg=CO-Create object act=N-Create of new object actual_type=CO-N jrn_seq=102361 timestamp=20120229154725823000 dproc=ICC suser=MVAGANEK job_number=638012 eff_user=MVAGANEK object=X_BIGNUM object_library=ICAPITST object_type=*MODULE object_attrCLE
+CEF:0|PATownsend|IBM-QAUDJRN|1.28|1007|CO-Create object|4| msg=CO-Create object act=N-Create of new object actual_type=CO-N jrn_seq=102361 timestamp=20120229154725823000 dproc=ICC suser=MVAGANEK job_number=638012 eff_user=MVAGANEK object=X_BIGNUM object_library=ICAPITST object_type=*MODULE object_attrCLE
 ```
 
 看到了這麼多不同的格式，我該怎麼處理他們呢？
