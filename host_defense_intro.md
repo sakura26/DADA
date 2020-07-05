@@ -64,7 +64,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 *   Server Remote control
 
-*   DELL: iDRAC
+*   IPMI，例如: DELL iDRAC、HP iLO
 
 *   IPKVM
 
@@ -130,7 +130,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 
 ### Runtime
 
-* Strtus2 OGNL表達式搭配過濾不當導致各種各樣的遠程命令執行弱點
+* Struts2 OGNL表達式搭配過濾不當導致各種各樣的遠程命令執行弱點
   > [](http://rickgray.me/2016/05/06/review-struts2-remote-command-execution-vulnerabilities.html)http://rickgray.me/2016/05/06/review-struts2-remote-command-execution-vulnerabilities.html
 * Java7導入動態語言轉型時，安全防禦架構破損產生大量嚴重弱點
   > [](http://www.ithome.com.tw/node/79034)http://www.ithome.com.tw/node/79034
@@ -179,7 +179,7 @@ _這不是傳統的課程，請不要來“聽課”，腦袋硬梆梆的是做�
 *   留下後門
 *   尋找有價值的資訊
 *   跳板攻擊下一個據點
-*   干擾、欺騙、破壞、盜取
+*   干擾、欺騙、破壞、盜取、勒索
 
 ### 弱點在哪邊？
 
