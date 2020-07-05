@@ -83,7 +83,7 @@ SSL、SSH、VPN、OpenVPN、Proxy、DNS Tunnel、Teamviewer、RDP
 
 防火牆規則
 
-**Server Form**
+**Server Farm**
 
 流量特徵：對內/對外服務、系統更新
 
